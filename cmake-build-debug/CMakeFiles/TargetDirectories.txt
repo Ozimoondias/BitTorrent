@@ -1,0 +1,4 @@
+/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld.dir
+/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld_autogen.dir

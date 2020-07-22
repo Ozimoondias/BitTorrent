@@ -8,8 +8,8 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(
 	helloworld
-	src/simplemenu.cpp
-	src/main.cpp
-	)
+        src/main.cpp
+		include/bt_window.hpp
+		src/bt_window.cpp)
 
 target_link_libraries(helloworld Qt5::Widgets)
