@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
+RM = /var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -55,7 +55,7 @@ include CMakeFiles/helloworld_autogen.dir/progress.make
 
 CMakeFiles/helloworld_autogen:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target helloworld"
-	/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake -E cmake_autogen /home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld_autogen.dir/AutogenInfo.json Debug
+	/var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake -E cmake_autogen /home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld_autogen.dir/AutogenInfo.json Debug
 
 helloworld_autogen: CMakeFiles/helloworld_autogen
 helloworld_autogen: CMakeFiles/helloworld_autogen.dir/build.make

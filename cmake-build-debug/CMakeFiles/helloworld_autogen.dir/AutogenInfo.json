@@ -3,7 +3,7 @@
 	"CMAKE_BINARY_DIR" : "/home/agar/BitTorrent/cmake-build-debug",
 	"CMAKE_CURRENT_BINARY_DIR" : "/home/agar/BitTorrent/cmake-build-debug",
 	"CMAKE_CURRENT_SOURCE_DIR" : "/home/agar/BitTorrent",
-	"CMAKE_EXECUTABLE" : "/var/lib/snapd/snap/clion/112/bin/cmake/linux/bin/cmake",
+	"CMAKE_EXECUTABLE" : "/var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake",
 	"CMAKE_SOURCE_DIR" : "/home/agar/BitTorrent",
 	"HEADERS" : 
 	[
@@ -48,7 +48,7 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/var/lib/snapd/snap/clion/112/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+		"/var/lib/snapd/snap/clion/121/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
 	"MOC_PREDEFS_FILE" : "/home/agar/BitTorrent/cmake-build-debug/helloworld_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
