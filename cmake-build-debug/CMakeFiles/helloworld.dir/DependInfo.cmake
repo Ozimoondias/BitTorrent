@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/agar/BitTorrent/cmake-build-debug/helloworld_autogen/mocs_compilation.cpp" "/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.o"
   "/home/agar/BitTorrent/src/bt_window.cpp" "/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld.dir/src/bt_window.cpp.o"
   "/home/agar/BitTorrent/src/main.cpp" "/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld.dir/src/main.cpp.o"
+  "/home/agar/BitTorrent/src/test.cpp" "/home/agar/BitTorrent/cmake-build-debug/CMakeFiles/helloworld.dir/src/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

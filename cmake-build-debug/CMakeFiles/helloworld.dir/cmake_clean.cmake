@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/helloworld.dir/src/bt_window.cpp.o"
   "CMakeFiles/helloworld.dir/src/main.cpp.o"
+  "CMakeFiles/helloworld.dir/src/test.cpp.o"
   "helloworld"
   "helloworld.pdb"
 )

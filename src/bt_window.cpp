@@ -13,19 +13,15 @@
 #include <QHBoxLayout>
 
 #include "../include/bt_window.hpp"
-
-void test()
-{
-
-}
+#include "../include/test.hpp"
 
 BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
 {
     std::cout << "Constructor BT_Window" << std::endl;
 
-    QToolBar *topBar = new QToolBar("Tools");
+   /* QToolBar *topBar = new QToolBar("Tools");
     addToolBar(Qt::TopToolBarArea, topBar);
-    //topBar->setMovable(false);
+    topBar->setMovable(false);
     topBar->setStyleSheet("QToolBar { background: white; }");
 
     QAction *addTorrentAction = new QAction(QIcon("../resource/add.png"), tr("Add &new torrent"), this);
@@ -44,9 +40,9 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
     connect(pauseTorrentAction, &QAction::triggered, this, test);
 
     topBar->addAction(startTorrentAction);
-    topBar->addAction(pauseTorrentAction);
+    topBar->addAction(pauseTorrentAction);*/
 
-    /*QTreeWidget *treeWidget = new QTreeWidget;
+    QTreeWidget *treeWidget = new QTreeWidget;
     treeWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
     treeWidget->setAlternatingRowColors(false);
     treeWidget->setRootIsDecorated(false);
@@ -68,12 +64,26 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
     topLevelItem1->setText(5, "6");
 
     treeWidget->addTopLevelItem(topLevelItem1);
-    setCentralWidget(treeWidget);*/
+    setCentralWidget(treeWidget);
 
-    QDockWidget *docker_bottom = new QDockWidget;
+    MyWidget *test = new MyWidget();
+
+    QListWidget *listWidgetsss = new QListWidget();
+    listWidgetsss->addItem("item1");
+    listWidgetsss->addItem("item2");
+    listWidgetsss->addItem("item3");
+
+    QDockWidget *docker_bottom = new QDockWidget("Status");
+    docker_bottom->setWidget(listWidgetsss);
     docker_bottom->setAllowedAreas(Qt::BottomDockWidgetArea);
     docker_bottom->setFeatures(QDockWidget::NoDockWidgetFeatures);
     addDockWidget(Qt::BottomDockWidgetArea, docker_bottom);
+
+    QDockWidget *docker_right = new QDockWidget("States");
+    docker_right->setWidget(test->m_myListWidget);
+    docker_right->setAllowedAreas(Qt::LeftDockWidgetArea);
+    docker_right->setFeatures(QDockWidget::NoDockWidgetFeatures);
+    addDockWidget(Qt::LeftDockWidgetArea, docker_right);
 
     setWindowTitle("BitTorrent");
     setFixedSize(1280, 720);

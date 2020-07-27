@@ -116,10 +116,16 @@
 		<Unit filename="/home/agar/BitTorrent/include/bt_window.hpp">
 			<Option target="helloworld"/>
 		</Unit>
+		<Unit filename="/home/agar/BitTorrent/include/test.hpp">
+			<Option target="helloworld"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/src/bt_window.cpp">
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/src/main.cpp">
+			<Option target="helloworld"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/src/test.cpp">
 			<Option target="helloworld"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/CMakeLists.txt">

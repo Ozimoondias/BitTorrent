@@ -11,6 +11,11 @@
 			"/home/agar/BitTorrent/include/bt_window.hpp",
 			"Mu",
 			"6YEA5652QU/moc_bt_window.cpp"
+		],
+		[
+			"/home/agar/BitTorrent/include/test.hpp",
+			"Mu",
+			"6YEA5652QU/moc_test.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -63,7 +68,8 @@
 	"SOURCES" : 
 	[
 		[ "/home/agar/BitTorrent/src/bt_window.cpp", "Mu" ],
-		[ "/home/agar/BitTorrent/src/main.cpp", "Mu" ]
+		[ "/home/agar/BitTorrent/src/main.cpp", "Mu" ],
+		[ "/home/agar/BitTorrent/src/test.cpp", "Mu" ]
 	],
 	"VERBOSITY" : 0
 }

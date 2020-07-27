@@ -10,6 +10,6 @@ add_executable(
 	helloworld
         src/main.cpp
 		include/bt_window.hpp
-		src/bt_window.cpp)
+		src/bt_window.cpp include/test.hpp src/test.cpp)
 
 target_link_libraries(helloworld Qt5::Widgets)
