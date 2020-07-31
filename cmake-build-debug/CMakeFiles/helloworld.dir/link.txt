@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/helloworld.dir/helloworld_autogen/mocs_compilation.cpp.o CMakeFiles/helloworld.dir/src/main.cpp.o CMakeFiles/helloworld.dir/src/bt_window.cpp.o CMakeFiles/helloworld.dir/src/test.cpp.o  -o helloworld  /usr/lib/libQt5Widgets.so.5.15.0 /usr/lib/libQt5Gui.so.5.15.0 /usr/lib/libQt5Core.so.5.15.0 

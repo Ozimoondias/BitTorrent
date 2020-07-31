@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/BT_daemon.dir/src/main.cpp.o  -o BT_daemon 

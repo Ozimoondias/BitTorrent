@@ -44,83 +44,121 @@ RM = /var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/CLionProjects/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/CLionProjects/BitTorrent/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/helloworld.dir/all
+all: daemon/all
+all: cli/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: daemon/preinstall
+preinstall: cli/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/helloworld.dir/clean
-clean: CMakeFiles/helloworld_autogen.dir/clean
+clean: daemon/clean
+clean: cli/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/helloworld.dir
+# Directory level rules for directory cli
 
-# All Build rule for target.
-CMakeFiles/helloworld.dir/all: CMakeFiles/helloworld_autogen.dir/all
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/depend
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target helloworld"
-.PHONY : CMakeFiles/helloworld.dir/all
+# Recursive "all" directory target.
+cli/all: cli/CMakeFiles/BT_cli.dir/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/helloworld.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/helloworld.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld.dir/rule
+.PHONY : cli/all
 
-# Convenience name for target.
-helloworld: CMakeFiles/helloworld.dir/rule
+# Recursive "preinstall" directory target.
+cli/preinstall:
 
-.PHONY : helloworld
+.PHONY : cli/preinstall
 
-# clean rule for target.
-CMakeFiles/helloworld.dir/clean:
-	$(MAKE) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/clean
-.PHONY : CMakeFiles/helloworld.dir/clean
+# Recursive "clean" directory target.
+cli/clean: cli/CMakeFiles/BT_cli.dir/clean
+
+.PHONY : cli/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/helloworld_autogen.dir
+# Directory level rules for directory daemon
+
+# Recursive "all" directory target.
+daemon/all: daemon/CMakeFiles/BT_daemon.dir/all
+
+.PHONY : daemon/all
+
+# Recursive "preinstall" directory target.
+daemon/preinstall:
+
+.PHONY : daemon/preinstall
+
+# Recursive "clean" directory target.
+daemon/clean: daemon/CMakeFiles/BT_daemon.dir/clean
+
+.PHONY : daemon/clean
+
+#=============================================================================
+# Target rules for target daemon/CMakeFiles/BT_daemon.dir
 
 # All Build rule for target.
-CMakeFiles/helloworld_autogen.dir/all:
-	$(MAKE) -f CMakeFiles/helloworld_autogen.dir/build.make CMakeFiles/helloworld_autogen.dir/depend
-	$(MAKE) -f CMakeFiles/helloworld_autogen.dir/build.make CMakeFiles/helloworld_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=6 "Built target helloworld_autogen"
-.PHONY : CMakeFiles/helloworld_autogen.dir/all
+daemon/CMakeFiles/BT_daemon.dir/all:
+	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/depend
+	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target BT_daemon"
+.PHONY : daemon/CMakeFiles/BT_daemon.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/helloworld_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/helloworld_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld_autogen.dir/rule
+daemon/CMakeFiles/BT_daemon.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 daemon/CMakeFiles/BT_daemon.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 0
+.PHONY : daemon/CMakeFiles/BT_daemon.dir/rule
 
 # Convenience name for target.
-helloworld_autogen: CMakeFiles/helloworld_autogen.dir/rule
+BT_daemon: daemon/CMakeFiles/BT_daemon.dir/rule
 
-.PHONY : helloworld_autogen
+.PHONY : BT_daemon
 
 # clean rule for target.
-CMakeFiles/helloworld_autogen.dir/clean:
-	$(MAKE) -f CMakeFiles/helloworld_autogen.dir/build.make CMakeFiles/helloworld_autogen.dir/clean
-.PHONY : CMakeFiles/helloworld_autogen.dir/clean
+daemon/CMakeFiles/BT_daemon.dir/clean:
+	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/clean
+.PHONY : daemon/CMakeFiles/BT_daemon.dir/clean
+
+#=============================================================================
+# Target rules for target cli/CMakeFiles/BT_cli.dir
+
+# All Build rule for target.
+cli/CMakeFiles/BT_cli.dir/all:
+	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/depend
+	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BT_cli"
+.PHONY : cli/CMakeFiles/BT_cli.dir/all
+
+# Build rule for subdir invocation for target.
+cli/CMakeFiles/BT_cli.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 cli/CMakeFiles/BT_cli.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 0
+.PHONY : cli/CMakeFiles/BT_cli.dir/rule
+
+# Convenience name for target.
+BT_cli: cli/CMakeFiles/BT_cli.dir/rule
+
+.PHONY : BT_cli
+
+# clean rule for target.
+cli/CMakeFiles/BT_cli.dir/clean:
+	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/clean
+.PHONY : cli/CMakeFiles/BT_cli.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

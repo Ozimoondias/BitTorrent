@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/CLionProjects/BitTorrent/cmake-build-debug/daemon/CMakeFiles/progress.marks
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 daemon/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 daemon/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 daemon/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 daemon/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named BT_daemon
+# Convenience name for target.
+daemon/CMakeFiles/BT_daemon.dir/rule:
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 daemon/CMakeFiles/BT_daemon.dir/rule
+.PHONY : daemon/CMakeFiles/BT_daemon.dir/rule
 
-# Build rule for target.
-BT_daemon: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BT_daemon
+# Convenience name for target.
+BT_daemon: daemon/CMakeFiles/BT_daemon.dir/rule
+
 .PHONY : BT_daemon
 
 # fast build rule for target.
 BT_daemon/fast:
-	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
 .PHONY : BT_daemon/fast
 
-#=============================================================================
-# Target rules for targets named BT_cli
+src/main.o: src/main.cpp.o
 
-# Build rule for target.
-BT_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BT_cli
-.PHONY : BT_cli
+.PHONY : src/main.o
 
-# fast build rule for target.
-BT_cli/fast:
-	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
-.PHONY : BT_cli/fast
+# target to build an object file
+src/main.cpp.o:
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -145,7 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BT_daemon"
-	@echo "... BT_cli"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
@@ -157,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/agar/CLionProjects/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
