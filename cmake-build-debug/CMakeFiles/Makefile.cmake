@@ -13,6 +13,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
   "../daemon/CMakeLists.txt"
+  "../gui/CMakeLists.txt"
   "/var/lib/snapd/snap/clion/121/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCInformation.cmake"
   "/var/lib/snapd/snap/clion/121/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCXXInformation.cmake"
   "/var/lib/snapd/snap/clion/121/bin/cmake/linux/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -46,12 +47,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "daemon/CMakeFiles/CMakeDirectoryInformation.cmake"
   "cli/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "daemon/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "gui/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "daemon/CMakeFiles/BT_daemon.dir/DependInfo.cmake"
   "cli/CMakeFiles/BT_cli.dir/DependInfo.cmake"
+  "daemon/CMakeFiles/BT_daemon.dir/DependInfo.cmake"
+  "gui/CMakeFiles/BT_gui.dir/DependInfo.cmake"
   )

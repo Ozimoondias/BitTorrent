@@ -48,10 +48,10 @@ RM = /var/lib/snapd/snap/clion/121/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/CLionProjects/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/CLionProjects/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/BitTorrent/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/CLionProjects/BitTorrent/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named BT_cli
+
+# Build rule for target.
+BT_cli: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BT_cli
+.PHONY : BT_cli
+
+# fast build rule for target.
+BT_cli/fast:
+	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
+.PHONY : BT_cli/fast
+
+#=============================================================================
 # Target rules for targets named BT_daemon
 
 # Build rule for target.
@@ -124,17 +137,17 @@ BT_daemon/fast:
 .PHONY : BT_daemon/fast
 
 #=============================================================================
-# Target rules for targets named BT_cli
+# Target rules for targets named BT_gui
 
 # Build rule for target.
-BT_cli: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BT_cli
-.PHONY : BT_cli
+BT_gui: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BT_gui
+.PHONY : BT_gui
 
 # fast build rule for target.
-BT_cli/fast:
-	$(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
-.PHONY : BT_cli/fast
+BT_gui/fast:
+	$(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/build
+.PHONY : BT_gui/fast
 
 # Help Target
 help:
@@ -144,8 +157,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BT_daemon"
 	@echo "... BT_cli"
+	@echo "... BT_daemon"
+	@echo "... BT_gui"
 .PHONY : help
 
 

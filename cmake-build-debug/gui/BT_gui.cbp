@@ -2,24 +2,24 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="BT_daemon"/>
+		<Option title="BT_gui"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\cli\;CMake Files\daemon\;CMake Files\gui\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/daemon"/>
+				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/gui"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="BT_daemon">
-				<Option output="/home/agar/BitTorrent/cmake-build-debug/daemon/BT_daemon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/daemon"/>
+			<Target title="BT_gui">
+				<Option output="/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/gui"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 BT_daemon"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 BT_gui"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="BT_daemon/fast">
-				<Option output="/home/agar/BitTorrent/cmake-build-debug/daemon/BT_daemon" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/daemon"/>
+			<Target title="BT_gui/fast">
+				<Option output="/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/agar/BitTorrent/cmake-build-debug/gui"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,15 +55,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 BT_daemon/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/daemon/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 BT_gui/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/agar/BitTorrent/cmake-build-debug/gui/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/agar/BitTorrent/daemon/src/main.cpp">
-			<Option target="BT_daemon"/>
+		<Unit filename="/home/agar/BitTorrent/gui/src/main.cpp">
+			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

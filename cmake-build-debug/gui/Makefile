@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/progress.marks
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 cli/all
+	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/progress.marks
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 gui/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 cli/clean
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 gui/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,12 +97,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 cli/preinstall
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 gui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 cli/preinstall
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 gui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -111,19 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-cli/CMakeFiles/BT_cli.dir/rule:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 cli/CMakeFiles/BT_cli.dir/rule
-.PHONY : cli/CMakeFiles/BT_cli.dir/rule
+gui/CMakeFiles/BT_gui.dir/rule:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 gui/CMakeFiles/BT_gui.dir/rule
+.PHONY : gui/CMakeFiles/BT_gui.dir/rule
 
 # Convenience name for target.
-BT_cli: cli/CMakeFiles/BT_cli.dir/rule
+BT_gui: gui/CMakeFiles/BT_gui.dir/rule
 
-.PHONY : BT_cli
+.PHONY : BT_gui
 
 # fast build rule for target.
-BT_cli/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
-.PHONY : BT_cli/fast
+BT_gui/fast:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/build
+.PHONY : BT_gui/fast
 
 src/main.o: src/main.cpp.o
 
@@ -131,7 +131,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.o
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -140,7 +140,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.i
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -149,7 +149,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.s
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -160,7 +160,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BT_cli"
+	@echo "... BT_gui"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

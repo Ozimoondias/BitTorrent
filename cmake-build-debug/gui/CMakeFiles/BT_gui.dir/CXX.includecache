@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/agar/BitTorrent/daemon/src/main.cpp
+/home/agar/BitTorrent/gui/src/main.cpp
 iostream
 -
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/agar/CLionProjects/BitTorrent/daemon/src/main.cpp" "/home/agar/CLionProjects/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
+  "/home/agar/BitTorrent/daemon/src/main.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
