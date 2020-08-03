@@ -161,12 +161,12 @@ cli/CMakeFiles/BT_cli.dir/clean:
 daemon/CMakeFiles/BT_daemon.dir/all:
 	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/depend
 	$(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target BT_daemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6 "Built target BT_daemon"
 .PHONY : daemon/CMakeFiles/BT_daemon.dir/all
 
 # Build rule for subdir invocation for target.
 daemon/CMakeFiles/BT_daemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 daemon/CMakeFiles/BT_daemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : daemon/CMakeFiles/BT_daemon.dir/rule
@@ -188,7 +188,7 @@ daemon/CMakeFiles/BT_daemon.dir/clean:
 gui/CMakeFiles/BT_gui.dir/all:
 	$(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/depend
 	$(MAKE) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target BT_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target BT_gui"
 .PHONY : gui/CMakeFiles/BT_gui.dir/all
 
 # Build rule for subdir invocation for target.

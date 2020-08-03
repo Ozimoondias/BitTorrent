@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "BT_daemon"
   "BT_daemon.pdb"
+  "CMakeFiles/BT_daemon.dir/src/daemon.cpp.o"
+  "CMakeFiles/BT_daemon.dir/src/dserver.cpp.o"
   "CMakeFiles/BT_daemon.dir/src/main.cpp.o"
 )
 

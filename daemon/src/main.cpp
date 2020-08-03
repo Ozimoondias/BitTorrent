@@ -2,11 +2,15 @@
 // Created by agar on 01/08/2020.
 //
 
-#include    <iostream>
+#include    "../include/daemon.hpp"
+
+#include    <thread>
 
 int         main()
 {
-    while (1)
-        std::cout << "test daemon" << std::endl;
+    Daemon  daemon;
+
+    daemon.setup_daemon();
+
     return 0;
 }

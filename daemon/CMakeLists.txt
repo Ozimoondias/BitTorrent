@@ -1,3 +1,10 @@
 project(BT_daemon)
 
-add_executable(BT_daemon src/main.cpp)
+find_package(Threads REQUIRED)
+
+add_executable(BT_daemon
+        src/daemon.cpp
+        src/dserver.cpp
+        src/main.cpp)
+
+target_link_libraries(BT_daemon Threads::Threads)

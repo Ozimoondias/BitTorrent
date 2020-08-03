@@ -62,6 +62,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/daemon.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/dserver.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/daemon/src/main.cpp">
 			<Option target="BT_daemon"/>
 		</Unit>

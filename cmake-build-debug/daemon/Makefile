@@ -125,6 +125,60 @@ BT_daemon/fast:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
 .PHONY : BT_daemon/fast
 
+src/daemon.o: src/daemon.cpp.o
+
+.PHONY : src/daemon.o
+
+# target to build an object file
+src/daemon.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.o
+.PHONY : src/daemon.cpp.o
+
+src/daemon.i: src/daemon.cpp.i
+
+.PHONY : src/daemon.i
+
+# target to preprocess a source file
+src/daemon.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.i
+.PHONY : src/daemon.cpp.i
+
+src/daemon.s: src/daemon.cpp.s
+
+.PHONY : src/daemon.s
+
+# target to generate assembly for a file
+src/daemon.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.s
+.PHONY : src/daemon.cpp.s
+
+src/dserver.o: src/dserver.cpp.o
+
+.PHONY : src/dserver.o
+
+# target to build an object file
+src/dserver.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o
+.PHONY : src/dserver.cpp.o
+
+src/dserver.i: src/dserver.cpp.i
+
+.PHONY : src/dserver.i
+
+# target to preprocess a source file
+src/dserver.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.i
+.PHONY : src/dserver.cpp.i
+
+src/dserver.s: src/dserver.cpp.s
+
+.PHONY : src/dserver.s
+
+# target to generate assembly for a file
+src/dserver.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.s
+.PHONY : src/dserver.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -161,6 +215,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BT_daemon"
+	@echo "... src/daemon.o"
+	@echo "... src/daemon.i"
+	@echo "... src/daemon.s"
+	@echo "... src/dserver.o"
+	@echo "... src/dserver.i"
+	@echo "... src/dserver.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
