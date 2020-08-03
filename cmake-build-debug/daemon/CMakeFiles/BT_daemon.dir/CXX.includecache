@@ -6,15 +6,55 @@
 
 #IncludeRegexTransform: 
 
+/home/agar/BitTorrent/daemon/include/daemon.hpp
+iostream
+-
+thread
+-
+chrono
+-
+csignal
+-
+iterator
+-
+cstdlib
+-
+cstring
+-
+sstream
+-
+dirent.h
+-
+stdlib.h
+-
+sys/stat.h
+-
+syslog.h
+-
+unistd.h
+-
+../include/dserver.hpp
+/home/agar/BitTorrent/daemon/include/dserver.hpp
+
 /home/agar/BitTorrent/daemon/include/dserver.hpp
 ../../lib/httplib.h
 /home/agar/BitTorrent/lib/httplib.h
 memory
 -
 
+/home/agar/BitTorrent/daemon/src/daemon.cpp
+../include/daemon.hpp
+/home/agar/BitTorrent/daemon/include/daemon.hpp
+
 /home/agar/BitTorrent/daemon/src/dserver.cpp
 ../include/dserver.hpp
 /home/agar/BitTorrent/daemon/include/dserver.hpp
+
+/home/agar/BitTorrent/daemon/src/main.cpp
+../include/daemon.hpp
+/home/agar/BitTorrent/daemon/include/daemon.hpp
+thread
+-
 
 /home/agar/BitTorrent/lib/httplib.h
 io.h

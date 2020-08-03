@@ -936,6 +936,7 @@ private:
 class Client {
 public:
   // Universal interface
+  Client(){}
   explicit Client(const char *scheme_host_port);
 
   explicit Client(const char *scheme_host_port,

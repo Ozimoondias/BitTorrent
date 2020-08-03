@@ -125,6 +125,33 @@ BT_cli/fast:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
 .PHONY : BT_cli/fast
 
+src/cli.o: src/cli.cpp.o
+
+.PHONY : src/cli.o
+
+# target to build an object file
+src/cli.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o
+.PHONY : src/cli.cpp.o
+
+src/cli.i: src/cli.cpp.i
+
+.PHONY : src/cli.i
+
+# target to preprocess a source file
+src/cli.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.i
+.PHONY : src/cli.cpp.i
+
+src/cli.s: src/cli.cpp.s
+
+.PHONY : src/cli.s
+
+# target to generate assembly for a file
+src/cli.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.s
+.PHONY : src/cli.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -161,6 +188,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BT_cli"
+	@echo "... src/cli.o"
+	@echo "... src/cli.i"
+	@echo "... src/cli.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

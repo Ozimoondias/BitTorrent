@@ -4,27 +4,33 @@
 
 #include    <iostream>
 
-#include    "../../lib/httplib.h"
+#include    "../include/cli.hpp"
 
-int         main()
+int         main(int ac, char**av)
 {
+/*
     size_t pos = 0;
     std::string token;
 
-    httplib::Client cli("localhost", 8080);
+    Cli     cli;
 
-    auto res = cli.Get("/torrent");
+    cli.client = httplib::Client("localhost", 8080);
+
+    auto post = cli.client.Post("/add", "test1", "sds");
+
+    auto res = cli.client.Get("/torrent");
     if (res)
-    {
-        std::string test(res->body);
+        std::cout << res->body << std::endl;*/
 
-        while ((pos = test.find('\t')) != std::string::npos)
-        {
-            token = test.substr(0, pos);
-            std::cout << token << std::endl;
-            test.erase(0, pos + 1);
-        }
-    }
+    Cli cli;
+
+    cli.client = httplib::Client("localhost", 8080);
+
+    auto res = cli.client.Get("/torrent");
+    if (res)
+        std::cout << res->body << std::endl;
+
+    auto post = cli.client.Post("/add", "test1", "sds");
 
     return 0;
 }

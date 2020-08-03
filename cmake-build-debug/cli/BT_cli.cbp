@@ -62,6 +62,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/agar/BitTorrent/cli/src/cli.cpp">
+			<Option target="BT_cli"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/cli/src/main.cpp">
 			<Option target="BT_cli"/>
 		</Unit>

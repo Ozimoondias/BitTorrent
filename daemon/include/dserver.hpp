@@ -18,7 +18,7 @@ public:
 
     void        setup_server();
 
-    std::list<std::list<std::string>>   torrent;
+    std::list<std::string>  torrent;
 
 private:
 };

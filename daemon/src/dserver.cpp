@@ -6,11 +6,11 @@
 
 DServer::DServer()
 {
-    torrent.push_back({"All Screwed Up", "Dirty Deeds Done Dirt Cheap", "1976"});
-    torrent.push_back({"Anything Goes", "Anything Goes", "2008"});
-    torrent.push_back({"Back in Black", "Back in Black", "1980"});
-    torrent.push_back({"Badlands", "Flick of the Switch", "1995"});
-    torrent.push_back({"C.O.D." , "For Those About to Rock We Salute You", "1981"});
+    torrent.push_back("All Screwed Up | Dirty Deeds Done Dirt Cheap | 1976");
+    torrent.push_back("Anything Goes | Anything Goes | 2008");
+    torrent.push_back("Back in Black | Back in Black | 1980");
+    torrent.push_back("Badlands | Flick of the Switch | 1995");
+    torrent.push_back("C.O.D. | For Those About to Rock We Salute You | 1981");
 }
 
 DServer::~DServer()
@@ -20,6 +20,11 @@ DServer::~DServer()
 void        DServer::setup_server()
 {
     Server  svr;
+
+    svr.Post("/add", [&](const Request & req, Response &res)
+    {
+        torrent.push_back(req.body);
+    });
 
     svr.Get("/torrent", [&](const Request & req, Response &res)
     {
@@ -33,13 +38,11 @@ void        DServer::setup_server()
 
         for (auto const& i : torrent)
         {
-            for (auto const& j : i)
-            {
-                str += j;
-                str += ' ';
-            }
-            str += '\t';
+            str += i;
+            str += '\n';
         }
+
+        std::cout << str << std::endl;
 
         res.set_content(str, "text/plain");
     });
