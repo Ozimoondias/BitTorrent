@@ -26,8 +26,8 @@
 class       Daemon
 {
 public:
-    Daemon();
-    virtual ~Daemon();
+    Daemon(){}
+    virtual ~Daemon(){}
 
     void                    run_daemon();
     [[noreturn]]    void    setup_daemon();

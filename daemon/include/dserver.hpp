@@ -14,7 +14,7 @@ class           DServer
 {
 public:
     DServer();
-    virtual ~DServer();
+    virtual ~DServer(){}
 
     void        setup_server();
 

@@ -4,14 +4,6 @@
 
 #include        "../include/daemon.hpp"
 
-Daemon::Daemon()
-{
-}
-
-Daemon::~Daemon()
-{
-}
-
 [[noreturn]] void Daemon::test()
 {
     while (1)

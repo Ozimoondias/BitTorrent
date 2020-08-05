@@ -13,10 +13,6 @@ DServer::DServer()
     torrent.push_back("C.O.D. | For Those About to Rock We Salute You | 1981");
 }
 
-DServer::~DServer()
-{
-}
-
 void        DServer::setup_server()
 {
     Server  svr;

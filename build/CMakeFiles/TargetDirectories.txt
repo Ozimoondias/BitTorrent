@@ -1,0 +1,11 @@
+/home/agar/BitTorrent/build/CMakeFiles/rebuild_cache.dir
+/home/agar/BitTorrent/build/CMakeFiles/edit_cache.dir
+/home/agar/BitTorrent/build/cli/CMakeFiles/rebuild_cache.dir
+/home/agar/BitTorrent/build/cli/CMakeFiles/edit_cache.dir
+/home/agar/BitTorrent/build/cli/CMakeFiles/BT_cli.dir
+/home/agar/BitTorrent/build/daemon/CMakeFiles/rebuild_cache.dir
+/home/agar/BitTorrent/build/daemon/CMakeFiles/edit_cache.dir
+/home/agar/BitTorrent/build/daemon/CMakeFiles/BT_daemon.dir
+/home/agar/BitTorrent/build/gui/CMakeFiles/rebuild_cache.dir
+/home/agar/BitTorrent/build/gui/CMakeFiles/edit_cache.dir
+/home/agar/BitTorrent/build/gui/CMakeFiles/BT_gui.dir
