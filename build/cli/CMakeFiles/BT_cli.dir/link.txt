@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/BT_cli.dir/src/cli.cpp.o CMakeFiles/BT_cli.dir/src/main.cpp.o  -o BT_cli 

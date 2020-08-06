@@ -3,14 +3,53 @@
 
 cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o
  /home/agar/BitTorrent/cli/include/cli.hpp
- /home/agar/BitTorrent/cli/include/command.hpp
+ /home/agar/BitTorrent/cli/include/command/add.hpp
+ /home/agar/BitTorrent/cli/include/command/del.hpp
+ /home/agar/BitTorrent/cli/include/command/help.hpp
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/include/command/info.hpp
+ /home/agar/BitTorrent/cli/include/command/pause.hpp
+ /home/agar/BitTorrent/cli/include/command/resume.hpp
  /home/agar/BitTorrent/cli/src/cli.cpp
  /home/agar/BitTorrent/lib/httplib.h
-cli/CMakeFiles/BT_cli.dir/src/command.cpp.o
- /home/agar/BitTorrent/cli/include/command.hpp
- /home/agar/BitTorrent/cli/src/command.cpp
+cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.o
+ /home/agar/BitTorrent/cli/include/command/add.hpp
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/src/command/add.cpp
+ /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.o
+ /home/agar/BitTorrent/cli/include/command/del.hpp
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/src/command/del.cpp
+ /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.o
+ /home/agar/BitTorrent/cli/include/command/help.hpp
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/src/command/help.cpp
+ /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.o
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/include/command/info.hpp
+ /home/agar/BitTorrent/cli/src/command/info.cpp
+ /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.o
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/include/command/pause.hpp
+ /home/agar/BitTorrent/cli/src/command/pause.cpp
+ /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.o
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/include/command/resume.hpp
+ /home/agar/BitTorrent/cli/src/command/resume.cpp
+ /home/agar/BitTorrent/lib/httplib.h
 cli/CMakeFiles/BT_cli.dir/src/main.cpp.o
  /home/agar/BitTorrent/cli/include/cli.hpp
- /home/agar/BitTorrent/cli/include/command.hpp
+ /home/agar/BitTorrent/cli/include/command/add.hpp
+ /home/agar/BitTorrent/cli/include/command/del.hpp
+ /home/agar/BitTorrent/cli/include/command/help.hpp
+ /home/agar/BitTorrent/cli/include/command/icommand.hpp
+ /home/agar/BitTorrent/cli/include/command/info.hpp
+ /home/agar/BitTorrent/cli/include/command/pause.hpp
+ /home/agar/BitTorrent/cli/include/command/resume.hpp
  /home/agar/BitTorrent/cli/src/main.cpp
  /home/agar/BitTorrent/lib/httplib.h
