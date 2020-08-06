@@ -3,9 +3,14 @@
 
 cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o
  /home/agar/BitTorrent/cli/include/cli.hpp
+ /home/agar/BitTorrent/cli/include/command.hpp
  /home/agar/BitTorrent/cli/src/cli.cpp
  /home/agar/BitTorrent/lib/httplib.h
+cli/CMakeFiles/BT_cli.dir/src/command.cpp.o
+ /home/agar/BitTorrent/cli/include/command.hpp
+ /home/agar/BitTorrent/cli/src/command.cpp
 cli/CMakeFiles/BT_cli.dir/src/main.cpp.o
  /home/agar/BitTorrent/cli/include/cli.hpp
+ /home/agar/BitTorrent/cli/include/command.hpp
  /home/agar/BitTorrent/cli/src/main.cpp
  /home/agar/BitTorrent/lib/httplib.h

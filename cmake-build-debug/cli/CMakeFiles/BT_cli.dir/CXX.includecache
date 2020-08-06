@@ -9,10 +9,22 @@
 /home/agar/BitTorrent/cli/include/cli.hpp
 ../../lib/httplib.h
 /home/agar/BitTorrent/lib/httplib.h
+../include/command.hpp
+/home/agar/BitTorrent/cli/include/command.hpp
+
+/home/agar/BitTorrent/cli/include/command.hpp
+iostream
+-
+vector
+-
 
 /home/agar/BitTorrent/cli/src/cli.cpp
 ../include/cli.hpp
 /home/agar/BitTorrent/cli/include/cli.hpp
+
+/home/agar/BitTorrent/cli/src/command.cpp
+../include/command.hpp
+/home/agar/BitTorrent/cli/include/command.hpp
 
 /home/agar/BitTorrent/cli/src/main.cpp
 iostream

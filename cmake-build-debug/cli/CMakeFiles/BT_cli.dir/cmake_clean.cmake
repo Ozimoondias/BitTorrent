@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "BT_cli"
   "BT_cli.pdb"
   "CMakeFiles/BT_cli.dir/src/cli.cpp.o"
+  "CMakeFiles/BT_cli.dir/src/command.cpp.o"
   "CMakeFiles/BT_cli.dir/src/main.cpp.o"
 )
 

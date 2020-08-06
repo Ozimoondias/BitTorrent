@@ -6,7 +6,11 @@
 
 Cli::Cli()
 {
-    client = httplib::Client("localhost", 8080);
+    client_ = httplib::Client("localhost", 8080);
+
+    command_.emplace("add", Command::Add);
+    command_.emplace("rm", Command::Del);
+    command_.emplace("help", Command::Help);
 }
 
 void            Cli::set_client(const std::string &host,
@@ -14,7 +18,7 @@ void            Cli::set_client(const std::string &host,
 {
     try
     {
-        client = httplib::Client(host, std::stoi(port));
+        client_ = httplib::Client(host, std::stoi(port));
     }
     catch (...)
     {
@@ -45,9 +49,13 @@ std::vector<std::string>    Cli::get_param(const std::string &str,
     return params;
 }
 
-void    Cli::parse_param(const std::vector<std::string> &param) const
+void    Cli::parse_param(std::vector<std::string> &param) const
 {
-    
+    std::cout << std::endl;
+
+    const auto &it = command_.find(param[0]);
+    if (it != command_.end())
+        it->second(param);
 }
 
 [[noreturn]] void   Cli::setup_cli(int ac,

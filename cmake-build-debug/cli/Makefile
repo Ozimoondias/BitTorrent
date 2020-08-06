@@ -172,6 +172,33 @@ src/cli.cpp.s:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.s
 .PHONY : src/cli.cpp.s
 
+src/command.o: src/command.cpp.o
+
+.PHONY : src/command.o
+
+# target to build an object file
+src/command.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command.cpp.o
+.PHONY : src/command.cpp.o
+
+src/command.i: src/command.cpp.i
+
+.PHONY : src/command.i
+
+# target to preprocess a source file
+src/command.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command.cpp.i
+.PHONY : src/command.cpp.i
+
+src/command.s: src/command.cpp.s
+
+.PHONY : src/command.s
+
+# target to generate assembly for a file
+src/command.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command.cpp.s
+.PHONY : src/command.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -211,6 +238,9 @@ help:
 	@echo "... src/cli.o"
 	@echo "... src/cli.i"
 	@echo "... src/cli.s"
+	@echo "... src/command.o"
+	@echo "... src/command.i"
+	@echo "... src/command.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
