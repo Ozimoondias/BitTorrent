@@ -7,6 +7,10 @@
 Cli::Cli()
 {
     client_ = httplib::Client("localhost", 8080);
+    client_.Get("/hi");
+
+    httplib::Client client_test("localhost", 8080);
+    client_test.Get("/hi");
 
     command_.emplace("add", std::make_unique<Add>());
     command_.emplace("rm", std::make_unique<Del>());
@@ -29,14 +33,6 @@ void            Cli::set_client(const std::string &host,
         throw;
     }
 }
-/*
-auto res = client.Get("/torrent");
-
-if (res)
-std::cout << res->body << std::endl;
-
-auto post = client.Post("/add", "test1", "sds");
-*/
 
 std::vector<std::string>    Cli::get_param(const std::string &str,
                                            const char &delimiter)
@@ -52,7 +48,7 @@ std::vector<std::string>    Cli::get_param(const std::string &str,
     return params;
 }
 
-void    Cli::parse_param(const std::vector<std::string> &param) const
+void    Cli::parse_param(const std::vector<std::string> &param)
 {
     std::cout << std::endl;
 
@@ -63,7 +59,6 @@ void    Cli::parse_param(const std::vector<std::string> &param) const
 
 [[noreturn]] void   Cli::setup_cli(int ac,
                                    char **av)
-                                   const
 {
     std::string                 command;
     std::vector<std::string>    param;

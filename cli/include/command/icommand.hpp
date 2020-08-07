@@ -13,7 +13,7 @@ class       ICommand
 {
 public:
     virtual void run(const std::vector<std::string>&,
-            const httplib::Client&) = 0;
+            httplib::Client&) = 0;
 private:
 };
 

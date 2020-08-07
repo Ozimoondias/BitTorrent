@@ -5,7 +5,10 @@
 #include    "../../include/command/add.hpp"
 
 void        Add::run(const std::vector<std::string>& param,
-                     const httplib::Client& client)
+                     httplib::Client& client)
 {
-    std::cout << "ok" << std::endl;
+    auto res = client.Get("/torrent");
+
+    if (res)
+        std::cout << "response: " << res->body << std::endl;
 }

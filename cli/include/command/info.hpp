@@ -14,7 +14,7 @@ public:
     virtual ~Info(){}
 
     void    run(const std::vector<std::string>&,
-                const httplib::Client&);
+            httplib::Client&);
 
 private:
 };

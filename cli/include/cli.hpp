@@ -25,8 +25,8 @@ public:
                     const std::string&);
     std::vector<std::string>    get_param(const std::string&,
                                           const char&) const;
-    void    parse_param(const std::vector<std::string>&) const;
-    [[noreturn]] void setup_cli(int, char**) const;
+    void    parse_param(const std::vector<std::string>&);
+    [[noreturn]] void setup_cli(int, char**);
 
 private:
     httplib::Client client_;
