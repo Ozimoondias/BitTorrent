@@ -1,12 +1,11 @@
-//
-// Created by agar on 01/08/2020.
-//
+    #include "../include/bt_window.hpp"
 
-#include    <iostream>
-
-int         main()
+int main(int argc, char *argv[])
 {
-    while (1)
-        std::cout << "test gui" << std::endl;
-    return 0;
+    QApplication app(argc, argv);
+
+    BT_Window   bt_window;
+    bt_window.show();
+
+    return app.exec();
 }
