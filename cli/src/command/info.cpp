@@ -10,5 +10,6 @@ void        Info::run(const std::vector<std::string>& param,
     auto res = client.Get("/torrent");
 
     if (res)
-        std::cout << "response: " << res->body << std::endl;
+        if (res->body.size() != 0)
+            std::cout << res->body << std::endl;
 }

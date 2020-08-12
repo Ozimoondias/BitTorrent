@@ -7,8 +7,13 @@
 void        Add::run(const std::vector<std::string>& param,
                      httplib::Client& client)
 {
-    auto res = client.Get("/torrent");
+    std::string     body;
 
-    if (res)
-        std::cout << "response: " << res->body << std::endl;
+    for (const auto& it : param)
+    {
+        body.append(it);
+        body.append(" ");
+    }
+
+    auto res = client.Post("/add", body, "text/plain");
 }

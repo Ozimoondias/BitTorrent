@@ -14,6 +14,8 @@ int         main(int ac, char **av)
     {
         if (ac == 3)
             cli.set_client(av[1], av[2]);
+        else
+            cli.set_client("localhost", "8080");
         cli.setup_cli(ac, av);
     }
     catch (...)

@@ -6,12 +6,6 @@
 
 Cli::Cli()
 {
-    client_ = httplib::Client("localhost", 8080);
-    client_.Get("/hi");
-
-    httplib::Client client_test("localhost", 8080);
-    client_test.Get("/hi");
-
     command_.emplace("add", std::make_unique<Add>());
     command_.emplace("rm", std::make_unique<Del>());
     command_.emplace("help", std::make_unique<Help>());
@@ -50,8 +44,6 @@ std::vector<std::string>    Cli::get_param(const std::string &str,
 
 void    Cli::parse_param(const std::vector<std::string> &param)
 {
-    std::cout << std::endl;
-
     const auto &it = command_.find(param[0]);
     if (it != command_.end())
         it->second->run(param, client_);
@@ -69,9 +61,6 @@ void    Cli::parse_param(const std::vector<std::string> &param)
         std::getline(std::cin, command);
 
         param = get_param(command, ' ');
-
-        for (auto it : param)
-            std::cout << "param: " << it << std::endl;
 
         if (param.size() > 0)
             parse_param(param);
