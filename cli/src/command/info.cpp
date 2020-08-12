@@ -7,7 +7,7 @@
 void        Info::run(const std::vector<std::string>& param,
                       httplib::Client& client)
 {
-    auto res = client.Get("/torrent");
+    auto res = client.Get("/info");
 
     if (res)
         if (res->body.size() != 0)

@@ -7,7 +7,7 @@
 Cli::Cli()
 {
     command_.emplace("add", std::make_unique<Add>());
-    command_.emplace("rm", std::make_unique<Del>());
+    command_.emplace("del", std::make_unique<Del>());
     command_.emplace("help", std::make_unique<Help>());
     command_.emplace("info", std::make_unique<Info>());
     command_.emplace("pause", std::make_unique<Pause>());

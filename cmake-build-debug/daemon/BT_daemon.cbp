@@ -62,10 +62,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/command/add.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/command/del.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/command/info.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/command/pause.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/daemon/src/command/resume.cpp">
+			<Option target="BT_daemon"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/daemon/src/daemon.cpp">
 			<Option target="BT_daemon"/>
 		</Unit>
-		<Unit filename="/home/agar/BitTorrent/daemon/src/dserver.cpp">
+		<Unit filename="/home/agar/BitTorrent/daemon/src/daemonserver.cpp">
 			<Option target="BT_daemon"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/daemon/src/main.cpp">

@@ -7,5 +7,5 @@
 void        Del::run(const std::vector<std::string>& param,
                      httplib::Client& client)
 {
-    std::cout << "ok" << std::endl;
+    auto res = client.Post("/del", "test", "text/plain");
 }

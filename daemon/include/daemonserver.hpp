@@ -10,15 +10,22 @@ using namespace httplib;
 
 #include        <memory>
 
-class           DServer
+class           DaemonServer
 {
 public:
-    DServer();
-    virtual ~DServer(){}
+    DaemonServer();
+    virtual ~DaemonServer(){}
+
+    void        add();
+    void        del();
+    void        info();
+    void        pause();
+    void        resume();
 
     void        setup_server();
 
-    std::list<std::string>  torrent;
+    Server                  srv_;
+    std::list<std::string>  torrent_;
 
 private:
 };

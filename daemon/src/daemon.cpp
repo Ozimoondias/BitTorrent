@@ -12,9 +12,8 @@
 
 void    Daemon::run_daemon()
 {
-    v_thread = std::thread(&Daemon::test, this);
-
-    server.setup_server();
+    thread_ = std::thread(&Daemon::test, this);
+    server_.setup_server();
 }
 
 [[noreturn]]    void    Daemon::setup_daemon()

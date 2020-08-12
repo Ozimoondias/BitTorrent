@@ -90,22 +90,87 @@ daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/daemon.cpp.s"
 	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/daemon.cpp -o CMakeFiles/BT_daemon.dir/src/daemon.cpp.s
 
-daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
-daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o: ../daemon/src/dserver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/dserver.cpp.o -c /home/agar/BitTorrent/daemon/src/dserver.cpp
+daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o: ../daemon/src/command/add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/command/add.cpp.o -c /home/agar/BitTorrent/daemon/src/command/add.cpp
 
-daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/dserver.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/dserver.cpp > CMakeFiles/BT_daemon.dir/src/dserver.cpp.i
+daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/command/add.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/command/add.cpp > CMakeFiles/BT_daemon.dir/src/command/add.cpp.i
 
-daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/dserver.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/dserver.cpp -o CMakeFiles/BT_daemon.dir/src/dserver.cpp.s
+daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/command/add.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/command/add.cpp -o CMakeFiles/BT_daemon.dir/src/command/add.cpp.s
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o: ../daemon/src/command/del.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/command/del.cpp.o -c /home/agar/BitTorrent/daemon/src/command/del.cpp
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/command/del.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/command/del.cpp > CMakeFiles/BT_daemon.dir/src/command/del.cpp.i
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/command/del.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/command/del.cpp -o CMakeFiles/BT_daemon.dir/src/command/del.cpp.s
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o: ../daemon/src/command/info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/command/info.cpp.o -c /home/agar/BitTorrent/daemon/src/command/info.cpp
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/command/info.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/command/info.cpp > CMakeFiles/BT_daemon.dir/src/command/info.cpp.i
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/command/info.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/command/info.cpp -o CMakeFiles/BT_daemon.dir/src/command/info.cpp.s
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o: ../daemon/src/command/pause.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o -c /home/agar/BitTorrent/daemon/src/command/pause.cpp
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/command/pause.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/command/pause.cpp > CMakeFiles/BT_daemon.dir/src/command/pause.cpp.i
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/command/pause.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/command/pause.cpp -o CMakeFiles/BT_daemon.dir/src/command/pause.cpp.s
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o: ../daemon/src/command/resume.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o -c /home/agar/BitTorrent/daemon/src/command/resume.cpp
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/command/resume.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/command/resume.cpp > CMakeFiles/BT_daemon.dir/src/command/resume.cpp.i
+
+daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/command/resume.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/command/resume.cpp -o CMakeFiles/BT_daemon.dir/src/command/resume.cpp.s
+
+daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
+daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o: ../daemon/src/daemonserver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o -c /home/agar/BitTorrent/daemon/src/daemonserver.cpp
+
+daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.i"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/daemon/src/daemonserver.cpp > CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.i
+
+daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.s"
+	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/daemon/src/daemonserver.cpp -o CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.s
 
 daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o: daemon/CMakeFiles/BT_daemon.dir/flags.make
 daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o: ../daemon/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
 	cd /home/agar/BitTorrent/cmake-build-debug/daemon && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_daemon.dir/src/main.cpp.o -c /home/agar/BitTorrent/daemon/src/main.cpp
 
 daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.i: cmake_force
@@ -119,18 +184,28 @@ daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.s: cmake_force
 # Object files for target BT_daemon
 BT_daemon_OBJECTS = \
 "CMakeFiles/BT_daemon.dir/src/daemon.cpp.o" \
-"CMakeFiles/BT_daemon.dir/src/dserver.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/command/add.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/command/del.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/command/info.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o" \
+"CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o" \
 "CMakeFiles/BT_daemon.dir/src/main.cpp.o"
 
 # External object files for target BT_daemon
 BT_daemon_EXTERNAL_OBJECTS =
 
 daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.o
-daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o
+daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o
 daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o
 daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/build.make
 daemon/BT_daemon: daemon/CMakeFiles/BT_daemon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BT_daemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable BT_daemon"
 	cd /home/agar/BitTorrent/cmake-build-debug/daemon && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BT_daemon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

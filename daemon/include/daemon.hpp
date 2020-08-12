@@ -21,7 +21,7 @@
 #include    <syslog.h>
 #include    <unistd.h>
 
-#include    "../include/dserver.hpp"
+#include    "../include/daemonserver.hpp"
 
 class       Daemon
 {
@@ -35,8 +35,8 @@ public:
 
 private:
 
-    std::thread v_thread;
-    DServer     server;
+    std::thread     thread_;
+    DaemonServer    server_;
 };
 
 #endif //BITTORRENT_DAEMON_HPP

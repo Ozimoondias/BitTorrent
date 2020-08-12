@@ -145,6 +145,141 @@ BT_daemon/fast:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/build
 .PHONY : BT_daemon/fast
 
+src/command/add.o: src/command/add.cpp.o
+
+.PHONY : src/command/add.o
+
+# target to build an object file
+src/command/add.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o
+.PHONY : src/command/add.cpp.o
+
+src/command/add.i: src/command/add.cpp.i
+
+.PHONY : src/command/add.i
+
+# target to preprocess a source file
+src/command/add.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.i
+.PHONY : src/command/add.cpp.i
+
+src/command/add.s: src/command/add.cpp.s
+
+.PHONY : src/command/add.s
+
+# target to generate assembly for a file
+src/command/add.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.s
+.PHONY : src/command/add.cpp.s
+
+src/command/del.o: src/command/del.cpp.o
+
+.PHONY : src/command/del.o
+
+# target to build an object file
+src/command/del.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o
+.PHONY : src/command/del.cpp.o
+
+src/command/del.i: src/command/del.cpp.i
+
+.PHONY : src/command/del.i
+
+# target to preprocess a source file
+src/command/del.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.i
+.PHONY : src/command/del.cpp.i
+
+src/command/del.s: src/command/del.cpp.s
+
+.PHONY : src/command/del.s
+
+# target to generate assembly for a file
+src/command/del.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.s
+.PHONY : src/command/del.cpp.s
+
+src/command/info.o: src/command/info.cpp.o
+
+.PHONY : src/command/info.o
+
+# target to build an object file
+src/command/info.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o
+.PHONY : src/command/info.cpp.o
+
+src/command/info.i: src/command/info.cpp.i
+
+.PHONY : src/command/info.i
+
+# target to preprocess a source file
+src/command/info.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.i
+.PHONY : src/command/info.cpp.i
+
+src/command/info.s: src/command/info.cpp.s
+
+.PHONY : src/command/info.s
+
+# target to generate assembly for a file
+src/command/info.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.s
+.PHONY : src/command/info.cpp.s
+
+src/command/pause.o: src/command/pause.cpp.o
+
+.PHONY : src/command/pause.o
+
+# target to build an object file
+src/command/pause.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o
+.PHONY : src/command/pause.cpp.o
+
+src/command/pause.i: src/command/pause.cpp.i
+
+.PHONY : src/command/pause.i
+
+# target to preprocess a source file
+src/command/pause.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.i
+.PHONY : src/command/pause.cpp.i
+
+src/command/pause.s: src/command/pause.cpp.s
+
+.PHONY : src/command/pause.s
+
+# target to generate assembly for a file
+src/command/pause.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.s
+.PHONY : src/command/pause.cpp.s
+
+src/command/resume.o: src/command/resume.cpp.o
+
+.PHONY : src/command/resume.o
+
+# target to build an object file
+src/command/resume.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o
+.PHONY : src/command/resume.cpp.o
+
+src/command/resume.i: src/command/resume.cpp.i
+
+.PHONY : src/command/resume.i
+
+# target to preprocess a source file
+src/command/resume.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.i
+.PHONY : src/command/resume.cpp.i
+
+src/command/resume.s: src/command/resume.cpp.s
+
+.PHONY : src/command/resume.s
+
+# target to generate assembly for a file
+src/command/resume.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.s
+.PHONY : src/command/resume.cpp.s
+
 src/daemon.o: src/daemon.cpp.o
 
 .PHONY : src/daemon.o
@@ -172,32 +307,32 @@ src/daemon.cpp.s:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.s
 .PHONY : src/daemon.cpp.s
 
-src/dserver.o: src/dserver.cpp.o
+src/daemonserver.o: src/daemonserver.cpp.o
 
-.PHONY : src/dserver.o
+.PHONY : src/daemonserver.o
 
 # target to build an object file
-src/dserver.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.o
-.PHONY : src/dserver.cpp.o
+src/daemonserver.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o
+.PHONY : src/daemonserver.cpp.o
 
-src/dserver.i: src/dserver.cpp.i
+src/daemonserver.i: src/daemonserver.cpp.i
 
-.PHONY : src/dserver.i
+.PHONY : src/daemonserver.i
 
 # target to preprocess a source file
-src/dserver.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.i
-.PHONY : src/dserver.cpp.i
+src/daemonserver.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.i
+.PHONY : src/daemonserver.cpp.i
 
-src/dserver.s: src/dserver.cpp.s
+src/daemonserver.s: src/daemonserver.cpp.s
 
-.PHONY : src/dserver.s
+.PHONY : src/daemonserver.s
 
 # target to generate assembly for a file
-src/dserver.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/dserver.cpp.s
-.PHONY : src/dserver.cpp.s
+src/daemonserver.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f daemon/CMakeFiles/BT_daemon.dir/build.make daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.s
+.PHONY : src/daemonserver.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -235,12 +370,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BT_daemon"
+	@echo "... src/command/add.o"
+	@echo "... src/command/add.i"
+	@echo "... src/command/add.s"
+	@echo "... src/command/del.o"
+	@echo "... src/command/del.i"
+	@echo "... src/command/del.s"
+	@echo "... src/command/info.o"
+	@echo "... src/command/info.i"
+	@echo "... src/command/info.s"
+	@echo "... src/command/pause.o"
+	@echo "... src/command/pause.i"
+	@echo "... src/command/pause.s"
+	@echo "... src/command/resume.o"
+	@echo "... src/command/resume.i"
+	@echo "... src/command/resume.s"
 	@echo "... src/daemon.o"
 	@echo "... src/daemon.i"
 	@echo "... src/daemon.s"
-	@echo "... src/dserver.o"
-	@echo "... src/dserver.i"
-	@echo "... src/dserver.s"
+	@echo "... src/daemonserver.o"
+	@echo "... src/daemonserver.i"
+	@echo "... src/daemonserver.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
