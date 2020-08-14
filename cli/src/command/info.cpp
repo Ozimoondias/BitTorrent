@@ -11,5 +11,5 @@ void        Info::run(const std::vector<std::string>& param,
 
     if (res)
         if (res->body.size() != 0)
-            std::cout << res->body << std::endl;
+            std::cout << YELLOW << res->body << RESET << std::endl;
 }

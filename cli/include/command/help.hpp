@@ -13,6 +13,12 @@ public:
     Help(){}
     virtual ~Help(){}
 
+    static void add();
+    static void del();
+    static void info();
+    static void pause();
+    static void resume();
+
     void    run(const std::vector<std::string>&,
             httplib::Client&);
 

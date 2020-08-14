@@ -8,14 +8,15 @@ void            DaemonServer::info()
 {
     srv_.Get("/info", [&](const Request & req, Response &res)
     {
+        std::ostringstream stream;
         std::string str;
 
         for (auto const& i : torrent_)
         {
-            str += i;
-            str += '\n';
+            stream << *i;
+            stream.put('\n');
         }
 
-        res.set_content(str, "text/plain");
+        res.set_content(stream.str(), "text/plain");
     });
 }

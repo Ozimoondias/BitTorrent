@@ -15,6 +15,21 @@ DaemonServer::DaemonServer()
      */
 }
 
+std::vector<std::string>
+        DaemonServer::get_param(const std::string &str,
+                                const char &delimiter)
+                                const
+{
+    std::string                 token;
+    std::vector<std::string>    params;
+    std::istringstream          tokenStream(str);
+
+    while (std::getline(tokenStream, token, delimiter))
+        params.push_back(token);
+
+    return params;
+}
+
 void        DaemonServer::setup_server()
 {
     add();
