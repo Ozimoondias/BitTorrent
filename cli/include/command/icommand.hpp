@@ -22,9 +22,19 @@
 class       ICommand
 {
 public:
-    virtual void run(const std::vector<std::string>&,
-            httplib::Client&) = 0;
-private:
+    virtual void    run(const std::vector<std::string>&,
+                        httplib::Client&) = 0;
+    void            print_req(std::shared_ptr<httplib::Response> req) {
+        if (req)
+            if (req->body.size() != 0)
+                std::cout << GREEN << req->body << RESET << std::endl;
+    }
+    void            print_req(const std::string& color,
+                              std::shared_ptr<httplib::Response> req) {
+        if (req)
+            if (req->body.size() != 0)
+                std::cout << color << req->body << RESET << std::endl;
+    }
 };
 
 #endif //BITTORRENT_ICOMMAND_HPP

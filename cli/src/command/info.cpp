@@ -5,11 +5,23 @@
 #include    "../../include/command/info.hpp"
 
 void        Info::run(const std::vector<std::string>& param,
-                      httplib::Client& client)
-{
-    auto res = client.Get("/info");
+                      httplib::Client& client) {
+    if (param.size() > 2) {
+        std::cout << CYAN;
+        std::cout << "Usage: info [<torrent-id>]" << std::endl;
+        std::cout << "Options: [<torrent-id>] to identify specific torrent." << std::endl;
+        std::cout << RESET;
+    } else {
+        std::shared_ptr<httplib::Response> req;
 
-    if (res)
-        if (res->body.size() != 0)
-            std::cout << YELLOW << res->body << RESET << std::endl;
+        if (param.size() == 1) {
+            req = client.Post("/info");
+        }
+        if (param.size() == 2) {
+            httplib::Params params;
+            params.emplace("param", param[1]);
+            req = client.Post("/info", params);
+        }
+        print_req(YELLOW, req);
+    }
 }

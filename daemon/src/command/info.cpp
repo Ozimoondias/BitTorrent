@@ -4,19 +4,23 @@
 
 #include        "../../include/daemonserver.hpp"
 
-void            DaemonServer::info()
-{
-    srv_.Get("/info", [&](const Request & req, Response &res)
-    {
-        std::ostringstream stream;
-        std::string str;
+void            DaemonServer::info() {
+    srv_.Post("/info", [&](const Request &req, Response &res) {
+        if (req.params.size() <= 1) {
+            std::ostringstream stream;
 
-        for (auto const& i : torrent_)
-        {
-            stream << *i;
-            stream.put('\n');
+            for (auto const &i : torrent_) {
+                if (req.params.size() >= 1) {
+                    if (i->name_ == req.params.begin()->second) {
+                        stream << *i;
+                        stream.put('\n');
+                    }
+                } else {
+                    stream << *i;
+                    stream.put('\n');
+                }
+            }
+            res.set_content(stream.str(), "text/plain");
         }
-
-        res.set_content(stream.str(), "text/plain");
     });
 }

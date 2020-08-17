@@ -8,12 +8,19 @@
 #include                        <vector>
 #include                        <iostream>
 
+#define ERROR                   "Error"
+#define PAUSED                  "Paused"
+#define SEEDING                 "Seeding"
+#define DOWNLOAD                "Downloading"
+
 struct                          Torrent
 {
     Torrent(std::string name)
-    : name_(name){}
+    : status_(DOWNLOAD), name_(name){}
     Torrent(std::string name, std::string folder)
-    : name_(name), folder_(folder){}
+    : status_(DOWNLOAD), name_(name), folder_(folder){}
+
+    std::string                 status_;
 
     std::string                 name_;
     std::string                 folder_;
@@ -30,7 +37,7 @@ inline std::ostream& operator<<(std::ostream &os,
         const Torrent &t)
 {
     os <<
-
+    "status = " << t.status_ << '\n' <<
     "name = " << t.name_ << '\n' <<
     "folder = " << t.folder_ << '\n' <<
     "size = " << t.size_ << '\n' <<
