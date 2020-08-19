@@ -15,11 +15,12 @@
 #include "../include/bt_window.hpp"
 #include "../include/test.hpp"
 
-BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
-{
+#include    "../../lib/httplib.h"
+
+BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
     std::cout << "Constructor BT_Window" << std::endl;
 
-   /* QToolBar *topBar = new QToolBar("Tools");
+    /*QToolBar *topBar = new QToolBar("Tools");
     addToolBar(Qt::TopToolBarArea, topBar);
     topBar->setMovable(false);
     topBar->setStyleSheet("QToolBar { background: white; }");
@@ -47,26 +48,68 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
     treeWidget->setAlternatingRowColors(false);
     treeWidget->setRootIsDecorated(false);
     treeWidget->setHeaderLabels(QStringList()
-    << "Torrent"
-    << "Peers/Seeds"
-    << "Progress"
-    << "Down rate"
-    << "Up rate"
-    << "Status");
+                                        << "Torrent"
+                                        << "Peers/Seeds"
+                                        << "Progress"
+                                        << "Down rate"
+                                        << "Up rate"
+                                        << "Status");
 
-    QTreeWidgetItem *topLevelItem1 = NULL;
-    topLevelItem1 = new QTreeWidgetItem;
-    topLevelItem1->setText(0, "1");
-    topLevelItem1->setText(1, "2");
-    topLevelItem1->setText(2, "3");
-    topLevelItem1->setText(3, "4");
-    topLevelItem1->setText(4, "5");
-    topLevelItem1->setText(5, "6");
+    httplib::Client client_("localhost", 8080);
+    auto res1 = client_.Post("/add", "add|test2|test2|", "text/plain");
 
-    treeWidget->addTopLevelItem(topLevelItem1);
+    auto req = client_.Post("/infogui");
+
+
+    std::string token;
+    std::vector<std::string> params;
+    std::istringstream tokenStream(req->body);
+
+    while (std::getline(tokenStream, token, '|'))
+        params.push_back(token);
+
+    std::string token2;
+    std::vector<std::string> params2;
+    std::istringstream tokenStream2(req->body);
+
+    while (std::getline(tokenStream2, token2, '\n'))
+        params2.push_back(token2);
+
+    std::list<QTreeWidgetItem *> testtt;
+
+    for (auto it : params) {
+        testtt.push_back(new QTreeWidgetItem);
+
+        for (int i = 0; i < params2.size(); ++i) {
+            testtt.back()->setText(i, params2[i].c_str());
+        }
+
+        treeWidget->addTopLevelItem(testtt.back());
+    }
+
+    /*for (auto it2 : params2)
+        std::cout << it2 << std::endl;
+
+std::list<QTreeWidgetItem*> testtt;
+
+for (int i = 0; i < params.size(); ++i)
+    testtt.push_back(new QTreeWidgetItem);
+
+for (auto it : testtt) {
+    it->setText(0, "1");
+    treeWidget->addTopLevelItem(it);
+}
+
+/*topLevelItem1->setText(0, "1");
+topLevelItem1->setText(1, "2");
+topLevelItem1->setText(2, "3");
+topLevelItem1->setText(3, "4");
+topLevelItem1->setText(4, "5");
+topLevelItem1->setText(5, "6");*/
+
     setCentralWidget(treeWidget);
 
-    MyWidget *test = new MyWidget();
+    SortTorrentWidget *test = new SortTorrentWidget();
 
     QListWidget *listWidgetsss = new QListWidget();
     listWidgetsss->addItem("item1");
@@ -87,6 +130,7 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent)
 
     setWindowTitle("BitTorrent");
     setFixedSize(1280, 720);
+
 }
 
 BT_Window::~BT_Window()

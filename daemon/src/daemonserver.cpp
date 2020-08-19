@@ -34,7 +34,8 @@ void        DaemonServer::setup_server()
 {
     add();
     del();
-    info();
+    info_cli();
+    info_gui();
     pause();
     resume();
 

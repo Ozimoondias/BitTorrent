@@ -9,12 +9,12 @@
 #include <QtWidgets/QListWidget>
 #include <QDebug>
 
-class MyWidget : public QWidget
+class SortTorrentWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    MyWidget(QWidget *parent = 0);
+    SortTorrentWidget(QWidget *parent = 0);
     QListWidget *m_myListWidget;
 
 private slots:

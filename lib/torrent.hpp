@@ -20,6 +20,41 @@ struct                          Torrent
     Torrent(std::string name, std::string folder)
     : status_(DOWNLOAD), name_(name), folder_(folder){}
 
+    void                        info_cli(std::string& str) {
+        str.append("Name: " + name_ + '\n');
+        str.append("Size: " + std::to_string(size_) + '\n');
+        str.append("Status: " + status_ + '\n');
+        str.append("Up Speed: " + std::to_string(down_) + '\n');
+        str.append("Down Speed " + std::to_string(up_) + '\n');
+        str.append("\n");
+    }
+    void                        infos_cli(std::string& str) {
+        str.append("Name: " + name_ + '\n');
+        str.append("Size: " + std::to_string(size_) + '\n');
+        str.append(status_ + '\n');
+        str.append("Status: " + std::to_string(down_) + '\n');
+        str.append("Up Speed: " + std::to_string(up_) + '\n');
+        str.append("Seeds: " + std::to_string(seed_.size()) + '\n');
+        str.append("Peers: " + std::to_string(peer_.size()) + '\n');
+        str.append("\n");
+    }
+    void                        info_gui(std::string& str) {
+        str.append(name_ + '\n');
+        str.append(std::to_string(size_) + '\n');
+        str.append(status_ + '\n');
+        str.append(std::to_string(down_) + '\n');
+        str.append(std::to_string(up_) + '\n');
+    }
+    void                        infos_gui(std::string& str) {
+        str.append(name_ + '\n');
+        str.append(std::to_string(size_) + '\n');
+        str.append(status_ + '\n');
+        str.append(std::to_string(down_) + '\n');
+        str.append(std::to_string(up_) + '\n');
+        str.append(std::to_string(seed_.size()) + '\n');
+        str.append(std::to_string(peer_.size()) + '\n');
+    }
+
     std::string                 status_;
 
     std::string                 name_;

@@ -15,12 +15,12 @@ void        Info::run(const std::vector<std::string>& param,
         std::shared_ptr<httplib::Response> req;
 
         if (param.size() == 1) {
-            req = client.Post("/info");
+            req = client.Post("/infocli");
         }
         if (param.size() == 2) {
             httplib::Params params;
             params.emplace("param", param[1]);
-            req = client.Post("/info", params);
+            req = client.Post("/infocli", params);
         }
         print_req(YELLOW, req);
     }

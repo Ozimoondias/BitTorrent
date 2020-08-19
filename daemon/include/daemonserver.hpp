@@ -19,7 +19,8 @@ public:
 
     void        add();
     void        del();
-    void        info();
+    void        info_cli();
+    void        info_gui();
     void        pause();
     void        resume();
 
