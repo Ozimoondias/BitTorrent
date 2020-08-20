@@ -5,10 +5,13 @@
 #ifndef HELLOWORLD_BT_WINDOW_HPP
 #define HELLOWORLD_BT_WINDOW_HPP
 
-#include <QMainWindow>
-#include <QApplication>
-#include <QPushButton>
-#include <QtCore>
+#include    <QMainWindow>
+#include    <QApplication>
+#include    <QPushButton>
+#include    <QtCore>
+
+#include    "StatesWidget.hpp"
+#include    "TorrentWidget.hpp"
 
 class   BT_Window : public QMainWindow
 {

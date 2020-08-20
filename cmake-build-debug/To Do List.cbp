@@ -249,19 +249,25 @@
 		<Unit filename="/home/agar/BitTorrent/daemon/src/main.cpp">
 			<Option target="BT_daemon"/>
 		</Unit>
+		<Unit filename="/home/agar/BitTorrent/gui/include/StatesWidget.hpp">
+			<Option target="BT_gui"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/gui/include/TorrentWidget.hpp">
+			<Option target="BT_gui"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/include/bt_window.hpp">
 			<Option target="BT_gui"/>
 		</Unit>
-		<Unit filename="/home/agar/BitTorrent/gui/include/test.hpp">
+		<Unit filename="/home/agar/BitTorrent/gui/src/StatesWidget.cpp">
+			<Option target="BT_gui"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/gui/src/TorentWidget.cpp">
 			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/src/bt_window.cpp">
 			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/src/main.cpp">
-			<Option target="BT_gui"/>
-		</Unit>
-		<Unit filename="/home/agar/BitTorrent/gui/src/test.cpp">
 			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/CMakeLists.txt">

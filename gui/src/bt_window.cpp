@@ -13,7 +13,6 @@
 #include <QHBoxLayout>
 
 #include "../include/bt_window.hpp"
-#include "../include/test.hpp"
 
 #include    "../../lib/httplib.h"
 
@@ -43,17 +42,7 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
     topBar->addAction(startTorrentAction);
     topBar->addAction(pauseTorrentAction);*/
 
-    QTreeWidget *treeWidget = new QTreeWidget;
-    treeWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
-    treeWidget->setAlternatingRowColors(false);
-    treeWidget->setRootIsDecorated(false);
-    treeWidget->setHeaderLabels(QStringList()
-                                        << "Torrent"
-                                        << "Peers/Seeds"
-                                        << "Progress"
-                                        << "Down rate"
-                                        << "Up rate"
-                                        << "Status");
+    TorrentWidget   *torrent_widget = new TorrentWidget();
 
     httplib::Client client_("localhost", 8080);
     auto res1 = client_.Post("/add", "add|test2|test2|", "text/plain");
@@ -75,16 +64,14 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
     while (std::getline(tokenStream2, token2, '\n'))
         params2.push_back(token2);
 
-    std::list<QTreeWidgetItem *> testtt;
-
     for (auto it : params) {
-        testtt.push_back(new QTreeWidgetItem);
+        torrent_widget->list_tree_widget_.push_back(new QTreeWidgetItem);
 
         for (int i = 0; i < params2.size(); ++i) {
-            testtt.back()->setText(i, params2[i].c_str());
+            torrent_widget->list_tree_widget_.back()->setText(i, params2[i].c_str());
         }
 
-        treeWidget->addTopLevelItem(testtt.back());
+        torrent_widget->addTopLevelItem(torrent_widget->list_tree_widget_.back());
     }
 
     /*for (auto it2 : params2)
@@ -107,9 +94,9 @@ topLevelItem1->setText(3, "4");
 topLevelItem1->setText(4, "5");
 topLevelItem1->setText(5, "6");*/
 
-    setCentralWidget(treeWidget);
+    setCentralWidget(torrent_widget);
 
-    SortTorrentWidget *test = new SortTorrentWidget();
+    StatesWidget *states_widget = new StatesWidget();
 
     QListWidget *listWidgetsss = new QListWidget();
     listWidgetsss->addItem("item1");
@@ -120,12 +107,14 @@ topLevelItem1->setText(5, "6");*/
     docker_bottom->setWidget(listWidgetsss);
     docker_bottom->setAllowedAreas(Qt::BottomDockWidgetArea);
     docker_bottom->setFeatures(QDockWidget::NoDockWidgetFeatures);
+
     addDockWidget(Qt::BottomDockWidgetArea, docker_bottom);
 
     QDockWidget *docker_right = new QDockWidget("States");
-    docker_right->setWidget(test->m_myListWidget);
+    docker_right->setWidget(states_widget->list_widget_);
     docker_right->setAllowedAreas(Qt::LeftDockWidgetArea);
     docker_right->setFeatures(QDockWidget::NoDockWidgetFeatures);
+
     addDockWidget(Qt::LeftDockWidgetArea, docker_right);
 
     setWindowTitle("BitTorrent");

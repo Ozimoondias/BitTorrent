@@ -187,6 +187,60 @@ BT_gui_autogen/mocs_compilation.cpp.s:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s
 .PHONY : BT_gui_autogen/mocs_compilation.cpp.s
 
+src/StatesWidget.o: src/StatesWidget.cpp.o
+
+.PHONY : src/StatesWidget.o
+
+# target to build an object file
+src/StatesWidget.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o
+.PHONY : src/StatesWidget.cpp.o
+
+src/StatesWidget.i: src/StatesWidget.cpp.i
+
+.PHONY : src/StatesWidget.i
+
+# target to preprocess a source file
+src/StatesWidget.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i
+.PHONY : src/StatesWidget.cpp.i
+
+src/StatesWidget.s: src/StatesWidget.cpp.s
+
+.PHONY : src/StatesWidget.s
+
+# target to generate assembly for a file
+src/StatesWidget.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
+.PHONY : src/StatesWidget.cpp.s
+
+src/TorentWidget.o: src/TorentWidget.cpp.o
+
+.PHONY : src/TorentWidget.o
+
+# target to build an object file
+src/TorentWidget.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o
+.PHONY : src/TorentWidget.cpp.o
+
+src/TorentWidget.i: src/TorentWidget.cpp.i
+
+.PHONY : src/TorentWidget.i
+
+# target to preprocess a source file
+src/TorentWidget.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.i
+.PHONY : src/TorentWidget.cpp.i
+
+src/TorentWidget.s: src/TorentWidget.cpp.s
+
+.PHONY : src/TorentWidget.s
+
+# target to generate assembly for a file
+src/TorentWidget.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.s
+.PHONY : src/TorentWidget.cpp.s
+
 src/bt_window.o: src/bt_window.cpp.o
 
 .PHONY : src/bt_window.o
@@ -241,33 +295,6 @@ src/main.cpp.s:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/test.o: src/test.cpp.o
-
-.PHONY : src/test.o
-
-# target to build an object file
-src/test.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
-
-src/test.i: src/test.cpp.i
-
-.PHONY : src/test.i
-
-# target to preprocess a source file
-src/test.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
-
-src/test.s: src/test.cpp.s
-
-.PHONY : src/test.s
-
-# target to generate assembly for a file
-src/test.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -281,15 +308,18 @@ help:
 	@echo "... BT_gui_autogen/mocs_compilation.o"
 	@echo "... BT_gui_autogen/mocs_compilation.i"
 	@echo "... BT_gui_autogen/mocs_compilation.s"
+	@echo "... src/StatesWidget.o"
+	@echo "... src/StatesWidget.i"
+	@echo "... src/StatesWidget.s"
+	@echo "... src/TorentWidget.o"
+	@echo "... src/TorentWidget.i"
+	@echo "... src/TorentWidget.s"
 	@echo "... src/bt_window.o"
 	@echo "... src/bt_window.i"
 	@echo "... src/bt_window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
 .PHONY : help
 
 

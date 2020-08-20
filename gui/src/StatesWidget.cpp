@@ -1,11 +1,12 @@
 //
-// Created by agar on 27/07/2020.
+// Created by agar on 19/08/2020.
 //
 
-#include "../include/test.hpp"
+#include    "../include/StatesWidget.hpp"
 
-SortTorrentWidget::SortTorrentWidget(QWidget *parent) : QWidget(parent)
-{
+StatesWidget::StatesWidget(QWidget *parent) : QWidget(parent) {
+    list_widget_ = new QListWidget;
+
     QListWidgetItem *b_all = new QListWidgetItem("All");
     b_all->setIcon(QIcon("../../gui/resource/all.png"));
 
@@ -21,20 +22,20 @@ SortTorrentWidget::SortTorrentWidget(QWidget *parent) : QWidget(parent)
     QListWidgetItem *b_queued = new QListWidgetItem("Queued");
     b_queued->setIcon(QIcon("../../gui/resource/queued.png"));
 
-    m_myListWidget = new QListWidget;
+    list_widget_->addItem(b_all);
+    list_widget_->addItem(b_downloading);
+    list_widget_->addItem(b_inactive);
+    list_widget_->addItem(b_seeding);
+    list_widget_->addItem(b_queued);
 
-    m_myListWidget->addItem(b_all);
-    m_myListWidget->addItem(b_downloading);
-    m_myListWidget->addItem(b_inactive);
-    m_myListWidget->addItem(b_seeding);
-    m_myListWidget->addItem(b_queued);
-
-    connect(m_myListWidget, SIGNAL(itemClicked(QListWidgetItem*)), SLOT(itemClicked(QListWidgetItem*)));
+    connect(list_widget_,
+            SIGNAL(itemClicked(QListWidgetItem*)),
+            SLOT(onItemClicked(QListWidgetItem*)));
 }
 
-void SortTorrentWidget::itemClicked(QListWidgetItem *item)
+void    StatesWidget::onItemClicked(QListWidgetItem *item)
 {
     if (!item)
         return;
-    qDebug() << "row [" << m_myListWidget->row(item) << "] == " << item->text();
+    qDebug() << "row [" << list_widget_->row(item) << "] == " << item->text();
 }
