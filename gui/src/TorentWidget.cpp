@@ -8,7 +8,7 @@ TorrentWidget::TorrentWidget(QWidget *parent) : QTreeWidget(parent) {
     client_ = httplib::Client("localhost", 8080);
 
     setSelectionBehavior(QAbstractItemView::SelectRows);
-    setAlternatingRowColors(false);
+    setAlternatingRowColors(true);
     setRootIsDecorated(false);
     setHeaderLabels(QStringList()
                             << "Torrent"
@@ -30,6 +30,5 @@ void    TorrentWidget::onItemClicked(QTreeWidgetItem *item, int col)
     params.emplace("param",
                    item->text(0).toLocal8Bit().constData());
     const auto& req = client_.Post("/infogui", params);
-
     qDebug() << req->body.c_str();
 }

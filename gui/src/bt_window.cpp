@@ -66,6 +66,7 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
 
     for (auto it : params) {
         torrent_widget->list_tree_widget_.push_back(new QTreeWidgetItem);
+        torrent_widget->list_tree_widget_.back()->setFlags(Qt::ItemIsEnabled);
 
         for (int i = 0; i < params2.size(); ++i) {
             torrent_widget->list_tree_widget_.back()->setText(i, params2[i].c_str());
@@ -98,10 +99,38 @@ topLevelItem1->setText(5, "6");*/
 
     StatesWidget *states_widget = new StatesWidget();
 
+
+
+    QString str1 = QString("Down Speed = test"
+                           "\nUp Speed = test"
+                           "\nDownloaded = test"
+                           "\nUploaded = test");
+    QString str12 = QString("");
+    QString str2 = QString("Seeds = test2"
+                           "\nPeers = test2"
+                           "\nShare Ratio = test2"
+                           "\nAvailability = test2"
+                           "\nSeed Rank = test2");
+    QString str23 = QString("");
+    QString str3 = QString("ETA Time = test3"
+                           "\nActive Time = test3"
+                           "\nSeeding Time = test3"
+                           "\nLast Transfer = test3"
+                           "\nComplete Seen = test3");
+
     QListWidget *listWidgetsss = new QListWidget();
-    listWidgetsss->addItem("item1");
-    listWidgetsss->addItem("item2");
-    listWidgetsss->addItem("item3");
+    listWidgetsss->addItem(str1);
+    listWidgetsss->addItem(str12);
+    listWidgetsss->addItem(str2);
+    listWidgetsss->addItem(str23);
+    listWidgetsss->addItem(str3);
+
+    for(int i = 0; i < listWidgetsss->count(); ++i) {
+        listWidgetsss->item(i)->setFlags(Qt::NoItemFlags);
+    }
+    listWidgetsss->setFlow(QListView::LeftToRight);
+
+
 
     QDockWidget *docker_bottom = new QDockWidget("Status");
     docker_bottom->setWidget(listWidgetsss);

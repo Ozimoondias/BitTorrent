@@ -7,6 +7,7 @@
 
 #include    <QTreeWidget>
 #include    <QWidget>
+#include    <QHeaderView>
 #include    <QtWidgets/QListWidget>
 #include    <QDebug>
 

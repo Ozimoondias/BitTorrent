@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_StatesWidget.cpp
+memory
+-
+../../../../gui/include/StatesWidget.hpp
+/home/agar/BitTorrent/gui/include/StatesWidget.hpp
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
+/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_TorrentWidget.cpp
+memory
+-
+../../../../gui/include/TorrentWidget.hpp
+/home/agar/BitTorrent/gui/include/TorrentWidget.hpp
+QtCore/qbytearray.h
+-
+QtCore/qmetatype.h
+-
+
 /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_bt_window.cpp
 memory
 -
@@ -16,21 +36,35 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
-/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_test.cpp
-memory
--
-../../../../gui/include/test.hpp
-/home/agar/BitTorrent/gui/include/test.hpp
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
 /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp
+6YEA5652QU/moc_StatesWidget.cpp
+/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_StatesWidget.cpp
+6YEA5652QU/moc_TorrentWidget.cpp
+/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_TorrentWidget.cpp
 6YEA5652QU/moc_bt_window.cpp
 /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_bt_window.cpp
-6YEA5652QU/moc_test.cpp
-/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/6YEA5652QU/moc_test.cpp
+
+/home/agar/BitTorrent/gui/include/StatesWidget.hpp
+QWidget
+-
+QtWidgets/QListWidget
+-
+QDebug
+-
+
+/home/agar/BitTorrent/gui/include/TorrentWidget.hpp
+QTreeWidget
+-
+QWidget
+-
+QHeaderView
+-
+QtWidgets/QListWidget
+-
+QDebug
+-
+../../lib/httplib.h
+/home/agar/BitTorrent/lib/httplib.h
 
 /home/agar/BitTorrent/gui/include/bt_window.hpp
 QMainWindow
@@ -41,14 +75,18 @@ QPushButton
 -
 QtCore
 -
+StatesWidget.hpp
+/home/agar/BitTorrent/gui/include/StatesWidget.hpp
+TorrentWidget.hpp
+/home/agar/BitTorrent/gui/include/TorrentWidget.hpp
 
-/home/agar/BitTorrent/gui/include/test.hpp
-QWidget
--
-QtWidgets/QListWidget
--
-QDebug
--
+/home/agar/BitTorrent/gui/src/StatesWidget.cpp
+../include/StatesWidget.hpp
+/home/agar/BitTorrent/gui/include/StatesWidget.hpp
+
+/home/agar/BitTorrent/gui/src/TorentWidget.cpp
+../include/TorrentWidget.hpp
+/home/agar/BitTorrent/gui/include/TorrentWidget.hpp
 
 /home/agar/BitTorrent/gui/src/bt_window.cpp
 iostream
@@ -69,18 +107,12 @@ QHBoxLayout
 -
 ../include/bt_window.hpp
 /home/agar/BitTorrent/gui/include/bt_window.hpp
-../include/test.hpp
-/home/agar/BitTorrent/gui/include/test.hpp
 ../../lib/httplib.h
 /home/agar/BitTorrent/lib/httplib.h
 
 /home/agar/BitTorrent/gui/src/main.cpp
 ../include/bt_window.hpp
 /home/agar/BitTorrent/gui/include/bt_window.hpp
-
-/home/agar/BitTorrent/gui/src/test.cpp
-../include/test.hpp
-/home/agar/BitTorrent/gui/include/test.hpp
 
 /home/agar/BitTorrent/lib/httplib.h
 io.h
@@ -3744,6 +3776,10 @@ qcommonstyle.h
 qboxlayout.h
 /usr/include/qt/QtWidgets/qboxlayout.h
 
+/usr/include/qt/QtWidgets/QHeaderView
+qheaderview.h
+/usr/include/qt/QtWidgets/qheaderview.h
+
 /usr/include/qt/QtWidgets/QLayout
 qlayout.h
 /usr/include/qt/QtWidgets/qlayout.h
@@ -3771,6 +3807,10 @@ qscrollerproperties.h
 /usr/include/qt/QtWidgets/QToolBar
 qtoolbar.h
 /usr/include/qt/QtWidgets/qtoolbar.h
+
+/usr/include/qt/QtWidgets/QTreeWidget
+qtreewidget.h
+/usr/include/qt/QtWidgets/qtreewidget.h
 
 /usr/include/qt/QtWidgets/QWidget
 qwidget.h
