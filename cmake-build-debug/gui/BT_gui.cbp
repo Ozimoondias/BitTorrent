@@ -96,6 +96,9 @@
 		<Unit filename="/home/agar/BitTorrent/gui/include/StatesWidget.hpp">
 			<Option target="BT_gui"/>
 		</Unit>
+		<Unit filename="/home/agar/BitTorrent/gui/include/TopToolBar.hpp">
+			<Option target="BT_gui"/>
+		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/include/TorrentWidget.hpp">
 			<Option target="BT_gui"/>
 		</Unit>
@@ -103,6 +106,9 @@
 			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/src/StatesWidget.cpp">
+			<Option target="BT_gui"/>
+		</Unit>
+		<Unit filename="/home/agar/BitTorrent/gui/src/TopToolBar.cpp">
 			<Option target="BT_gui"/>
 		</Unit>
 		<Unit filename="/home/agar/BitTorrent/gui/src/TorentWidget.cpp">

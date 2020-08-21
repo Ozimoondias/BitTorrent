@@ -14,6 +14,20 @@ QtWidgets/QListWidget
 QDebug
 -
 
+/home/agar/BitTorrent/gui/include/TopToolBar.hpp
+QTreeWidget
+-
+QWidget
+-
+QHeaderView
+-
+QtWidgets/QListWidget
+-
+QDebug
+-
+../../lib/httplib.h
+/home/agar/BitTorrent/lib/httplib.h
+
 /home/agar/BitTorrent/gui/include/TorrentWidget.hpp
 QTreeWidget
 -
@@ -41,6 +55,8 @@ StatesWidget.hpp
 /home/agar/BitTorrent/gui/include/StatesWidget.hpp
 TorrentWidget.hpp
 /home/agar/BitTorrent/gui/include/TorrentWidget.hpp
+TopToolBar.hpp
+/home/agar/BitTorrent/gui/include/TopToolBar.hpp
 
 /home/agar/BitTorrent/gui/src/bt_window.cpp
 iostream

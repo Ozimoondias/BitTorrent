@@ -15,6 +15,11 @@
 			"6YEA5652QU/moc_StatesWidget.cpp"
 		],
 		[
+			"/home/agar/BitTorrent/gui/include/TopToolBar.hpp",
+			"Mu",
+			"6YEA5652QU/moc_TopToolBar.cpp"
+		],
+		[
 			"/home/agar/BitTorrent/gui/include/TorrentWidget.hpp",
 			"Mu",
 			"6YEA5652QU/moc_TorrentWidget.cpp"
@@ -76,6 +81,7 @@
 	"SOURCES" : 
 	[
 		[ "/home/agar/BitTorrent/gui/src/StatesWidget.cpp", "Mu" ],
+		[ "/home/agar/BitTorrent/gui/src/TopToolBar.cpp", "Mu" ],
 		[ "/home/agar/BitTorrent/gui/src/TorentWidget.cpp", "Mu" ],
 		[ "/home/agar/BitTorrent/gui/src/bt_window.cpp", "Mu" ],
 		[ "/home/agar/BitTorrent/gui/src/main.cpp", "Mu" ]

@@ -214,6 +214,33 @@ src/StatesWidget.cpp.s:
 	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
 .PHONY : src/StatesWidget.cpp.s
 
+src/TopToolBar.o: src/TopToolBar.cpp.o
+
+.PHONY : src/TopToolBar.o
+
+# target to build an object file
+src/TopToolBar.cpp.o:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o
+.PHONY : src/TopToolBar.cpp.o
+
+src/TopToolBar.i: src/TopToolBar.cpp.i
+
+.PHONY : src/TopToolBar.i
+
+# target to preprocess a source file
+src/TopToolBar.cpp.i:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.i
+.PHONY : src/TopToolBar.cpp.i
+
+src/TopToolBar.s: src/TopToolBar.cpp.s
+
+.PHONY : src/TopToolBar.s
+
+# target to generate assembly for a file
+src/TopToolBar.cpp.s:
+	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.s
+.PHONY : src/TopToolBar.cpp.s
+
 src/TorentWidget.o: src/TorentWidget.cpp.o
 
 .PHONY : src/TorentWidget.o
@@ -311,6 +338,9 @@ help:
 	@echo "... src/StatesWidget.o"
 	@echo "... src/StatesWidget.i"
 	@echo "... src/StatesWidget.s"
+	@echo "... src/TopToolBar.o"
+	@echo "... src/TopToolBar.i"
+	@echo "... src/TopToolBar.s"
 	@echo "... src/TorentWidget.o"
 	@echo "... src/TorentWidget.i"
 	@echo "... src/TorentWidget.s"

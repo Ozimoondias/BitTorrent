@@ -42,13 +42,14 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
     topBar->addAction(startTorrentAction);
     topBar->addAction(pauseTorrentAction);*/
 
-    TorrentWidget   *torrent_widget = new TorrentWidget();
-
     httplib::Client client_("localhost", 8080);
     auto res1 = client_.Post("/add", "add|test2|test2|", "text/plain");
 
     auto req = client_.Post("/infogui");
 
+
+    TorrentWidget   *torrent_widget = new TorrentWidget;
+    TorrentWidget   *torrent_widget2 = new TorrentWidget;
 
     std::string token;
     std::vector<std::string> params;
@@ -66,14 +67,17 @@ BT_Window::BT_Window(QWidget *parent) : QMainWindow(parent) {
 
     for (auto it : params) {
         torrent_widget->list_tree_widget_.push_back(new QTreeWidgetItem);
-        torrent_widget->list_tree_widget_.back()->setFlags(Qt::ItemIsEnabled);
+        torrent_widget2->list_tree_widget_.push_back(new QTreeWidgetItem);
 
         for (int i = 0; i < params2.size(); ++i) {
             torrent_widget->list_tree_widget_.back()->setText(i, params2[i].c_str());
+            torrent_widget2->list_tree_widget_.back()->setText(i, params2[i].c_str());
         }
 
         torrent_widget->addTopLevelItem(torrent_widget->list_tree_widget_.back());
+        torrent_widget2->addTopLevelItem(torrent_widget->list_tree_widget_.back());
     }
+
 
     /*for (auto it2 : params2)
         std::cout << it2 << std::endl;
@@ -97,11 +101,12 @@ topLevelItem1->setText(5, "6");*/
 
     setCentralWidget(torrent_widget);
 
-    StatesWidget *states_widget = new StatesWidget();
+    StatesWidget *states_widget = new StatesWidget;
 
 
 
-    QString str1 = QString("Down Speed = test"
+
+    /*QString str1 = QString("Down Speed = test"
                            "\nUp Speed = test"
                            "\nDownloaded = test"
                            "\nUploaded = test");
@@ -129,18 +134,53 @@ topLevelItem1->setText(5, "6");*/
         listWidgetsss->item(i)->setFlags(Qt::NoItemFlags);
     }
     listWidgetsss->setFlow(QListView::LeftToRight);
+*/
+
+    QTableWidget* table = new QTableWidget(5, 4);
+    table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    table->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    table->horizontalHeader()->hide();
+    table->verticalHeader()->hide();
+    table->setShowGrid(false);
+
+    table->setItem(0, 0, new QTableWidgetItem("Down Speed = "));
+    table->setItem(1, 0, new QTableWidgetItem("Up Speed = "));
+    table->setItem(2, 0, new QTableWidgetItem("Downloaded = "));
+    table->setItem(3, 0, new QTableWidgetItem("Uploaded = "));
+
+    table->setItem(0, 1, new QTableWidgetItem("Seeds = "));
+    table->setItem(1, 1, new QTableWidgetItem("Peers = "));
+    table->setItem(2, 1, new QTableWidgetItem("Share Ratio = "));
+    table->setItem(3, 1, new QTableWidgetItem("Availability = "));
+    table->setItem(4, 1, new QTableWidgetItem("Seed Rank = "));
+
+    for (int r = 0; r < table->rowCount(); ++r)
+        for (int c = 0; c < table->columnCount(); ++c)
+            if (table->item(r, c))
+                table->item(r, c)->setFlags(Qt::NoItemFlags);
 
 
+    QDockWidget *docker_bottom = new QDockWidget;
 
-    QDockWidget *docker_bottom = new QDockWidget("Status");
-    docker_bottom->setWidget(listWidgetsss);
+    docker_bottom->setTitleBarWidget(new QWidget);
+    docker_bottom->titleBarWidget()->hide();
+
+    docker_bottom->setWidget(table);
+
     docker_bottom->setAllowedAreas(Qt::BottomDockWidgetArea);
     docker_bottom->setFeatures(QDockWidget::NoDockWidgetFeatures);
 
     addDockWidget(Qt::BottomDockWidgetArea, docker_bottom);
 
-    QDockWidget *docker_right = new QDockWidget("States");
+
+
+    QDockWidget *docker_right = new QDockWidget;
+
+    docker_right->setTitleBarWidget(new QWidget);
+    docker_right->titleBarWidget()->hide();
+
     docker_right->setWidget(states_widget->list_widget_);
+
     docker_right->setAllowedAreas(Qt::LeftDockWidgetArea);
     docker_right->setFeatures(QDockWidget::NoDockWidgetFeatures);
 

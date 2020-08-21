@@ -7,12 +7,14 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 add_executable(BT_gui
         include/StatesWidget.hpp
         include/TorrentWidget.hpp
+        include/TopToolBar.hpp
         include/bt_window.hpp
 
         src/main.cpp
         src/bt_window.cpp
         src/StatesWidget.cpp
         src/TorentWidget.cpp
+        src/TopToolBar.cpp
         )
 
 target_link_libraries(BT_gui Qt5::Widgets)

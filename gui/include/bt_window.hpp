@@ -12,6 +12,7 @@
 
 #include    "StatesWidget.hpp"
 #include    "TorrentWidget.hpp"
+#include    "TopToolBar.hpp"
 
 class   BT_Window : public QMainWindow
 {
