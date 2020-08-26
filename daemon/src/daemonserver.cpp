@@ -6,13 +6,29 @@
 
 DaemonServer::DaemonServer()
 {
-    /*
-    torrent.push_back("All Screwed Up | Dirty Deeds Done Dirt Cheap | 1976");
-    torrent.push_back("Anything Goes | Anything Goes | 2008");
-    torrent.push_back("Back in Black | Back in Black | 1980");
-    torrent.push_back("Badlands | Flick of the Switch | 1995");
-    torrent.push_back("C.O.D. | For Those About to Rock We Salute You | 1981");
-     */
+    std::ifstream   file("save.txt");  //Ouverture d'un fichier en lecture
+
+    if(file) {
+        std::string ligne;
+
+        while (getline(file, ligne)) {
+            std::string token;
+            std::vector<std::string> param;
+            std::istringstream stream(ligne);
+
+            while (std::getline(stream, token, '|'))
+                param.push_back(token);
+
+            if (!param.empty()) {
+                if (param.size() == 1)
+                    torrent_.push_back(std::make_unique<Torrent>(param[0]));
+                if (param.size() == 2)
+                    torrent_.push_back(std::make_unique<Torrent>(param[0], param[1]));
+            }
+        }
+    }
+    else
+        throw ("error file");
 }
 
 std::vector<std::string>
@@ -40,4 +56,19 @@ void        DaemonServer::setup_server()
     resume();
 
     srv_.listen("localhost", 8080);
+}
+
+void        DaemonServer::save()
+{
+    std::ofstream file("save.txt");
+
+    if(file) {
+        for (const auto& it : torrent_) {
+            std::string test;
+            it.get()->infos_save(test);
+            file << test << std::endl;
+        }
+    }
+    else
+        throw ("error file");
 }

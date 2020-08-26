@@ -4,16 +4,26 @@
 
 #include        "../include/daemon.hpp"
 
+bool                testbool = true;
+
 [[noreturn]] void Daemon::test()
 {
-    while (1)
+    while (testbool)
         std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    server_.save();
 }
 
 void    Daemon::run_daemon()
 {
     thread_ = std::thread(&Daemon::test, this);
     server_.setup_server();
+}
+
+void                    Daemon::signal_handler(int signal)
+{
+    testbool = false;
+    sleep(5);
+    exit(signal);
 }
 
 [[noreturn]]    void    Daemon::setup_daemon()
@@ -79,6 +89,10 @@ void    Daemon::run_daemon()
 */
 
     // infinite loop and thread
+    std::signal(SIGTERM, signal_handler);
+    std::signal(SIGABRT, signal_handler);
+    std::signal(SIGINT, signal_handler);
+
     run_daemon();
 
 /*

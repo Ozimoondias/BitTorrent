@@ -16,9 +16,9 @@ BottomWidget::BottomWidget(std::unique_ptr<httplib::Client> &c,
 
     rc_name[0] = "Name = ";
     rc_name[1] = "Folder = ";
-    rc_name[2] = "Total Size = ";
-    rc_name[3] = "Total Files = ";
-    rc_name[4] = "Added = ";
+    rc_name[2] = "Added = ";
+    rc_name[3] = "Total Size = ";
+    rc_name[4] = "Total Files = ";
 
     rc_name[5] = "Down Speed = ";
     rc_name[6] = "Up Speed = ";

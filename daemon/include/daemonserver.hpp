@@ -27,6 +27,7 @@ public:
     std::vector<std::string>    get_param(const std::string&,
                                           const char&) const;
     void        setup_server();
+    void        save();
 
 private:
     Server                              srv_;

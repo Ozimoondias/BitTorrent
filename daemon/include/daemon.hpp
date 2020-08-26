@@ -33,7 +33,11 @@ public:
     [[noreturn]]    void    setup_daemon();
     [[noreturn]]    void    test();
 
+    static void                    signal_handler(int);
+
 private:
+
+    bool            thread_b_ = true;
 
     std::thread     thread_;
     DaemonServer    server_;

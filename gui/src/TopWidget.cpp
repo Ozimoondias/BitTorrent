@@ -3,10 +3,15 @@
 //
 
 #include    "../include/TopWidget.hpp"
+#include "../include/TorrentWidget.hpp"
+#include "../../lib/torrent.hpp"
 
 TopWidget::TopWidget(std::unique_ptr<httplib::Client> &c,
+                     std::unique_ptr<TorrentWidget> &tw,
                      QWidget *parent)
-                     : client_(c), QToolBar(parent) {
+                     : client_(c),
+                     torrent_widget_(tw),
+                     QToolBar(parent) {
 
     setMovable(false);
     setStyleSheet("QToolBar { background: white; }");
@@ -42,15 +47,32 @@ void TopWidget::add() {
 }
 
 void TopWidget::del() {
-    qDebug() << "add";
+    if (torrent_widget_->get_current()) {
+        httplib::Params params;
+        params.emplace("name",
+                       torrent_widget_->get_current()->text(0).toStdString());
+        auto res = client_->Post("/del", params);
+    }
 }
 
 void TopWidget::start() {
-    qDebug() << "add";
+    if (torrent_widget_->get_current()) {
+        httplib::Params params;
+        params.emplace("name",
+                       torrent_widget_->get_current()->text(0).toStdString());
+        auto res = client_->Post("/resume", params);
+        torrent_widget_->set_status(DOWNLOAD);
+    }
 }
 
 void TopWidget::pause() {
-    qDebug() << "add";
+    if (torrent_widget_->get_current()) {
+        httplib::Params params;
+        params.emplace("name",
+                       torrent_widget_->get_current()->text(0).toStdString());
+        auto res = client_->Post("/pause", params);
+        torrent_widget_->set_status(PAUSED);
+    }
 }
 
 void TopWidget::preferences() {

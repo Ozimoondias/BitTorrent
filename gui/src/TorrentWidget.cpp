@@ -7,9 +7,11 @@
 #include    "../include/TorrentWidget.hpp"
 
 TorrentWidget::TorrentWidget(std::unique_ptr<httplib::Client> &c,
+                             std::string &ct,
                              std::string &cs,
                              QWidget *parent)
                              : client_(c),
+                             current_torrent_(ct),
                              current_state_(cs),
                              QTreeWidget(parent) {
 
@@ -77,6 +79,11 @@ bool    TorrentWidget::is_in_list(const std::string &str) {
             return true;
     }
     return false;
+}
+
+void    TorrentWidget::set_status(const std::string &status) {
+    if (currentItem())
+        currentItem()->setText(2, status.c_str());
 }
 
 void    TorrentWidget::add_torrent(const std::string &str) {
