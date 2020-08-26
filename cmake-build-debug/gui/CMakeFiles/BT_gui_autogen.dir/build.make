@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/Project/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/Project/BitTorrent/cmake-build-debug
 
 # Utility rule file for BT_gui_autogen.
 
@@ -74,8 +74,8 @@ CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
 include gui/CMakeFiles/BT_gui_autogen.dir/progress.make
 
 gui/CMakeFiles/BT_gui_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target BT_gui"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E cmake_autogen /home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target BT_gui"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E cmake_autogen /home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/AutogenInfo.json Debug
 
 BT_gui_autogen: gui/CMakeFiles/BT_gui_autogen
 BT_gui_autogen: gui/CMakeFiles/BT_gui_autogen.dir/build.make
@@ -88,10 +88,10 @@ gui/CMakeFiles/BT_gui_autogen.dir/build: BT_gui_autogen
 .PHONY : gui/CMakeFiles/BT_gui_autogen.dir/build
 
 gui/CMakeFiles/BT_gui_autogen.dir/clean:
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -P CMakeFiles/BT_gui_autogen.dir/cmake_clean.cmake
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -P CMakeFiles/BT_gui_autogen.dir/cmake_clean.cmake
 .PHONY : gui/CMakeFiles/BT_gui_autogen.dir/clean
 
 gui/CMakeFiles/BT_gui_autogen.dir/depend:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agar/BitTorrent /home/agar/BitTorrent/gui /home/agar/BitTorrent/cmake-build-debug /home/agar/BitTorrent/cmake-build-debug/gui /home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agar/Project/BitTorrent /home/agar/Project/BitTorrent/gui /home/agar/Project/BitTorrent/cmake-build-debug /home/agar/Project/BitTorrent/cmake-build-debug/gui /home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gui/CMakeFiles/BT_gui_autogen.dir/depend
 

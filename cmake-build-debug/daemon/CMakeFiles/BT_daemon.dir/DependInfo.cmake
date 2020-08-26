@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/agar/BitTorrent/daemon/src/command/add.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/command/del.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/command/info.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/command/pause.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/command/resume.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/daemon.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/daemonserver.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o"
-  "/home/agar/BitTorrent/daemon/src/main.cpp" "/home/agar/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/command/add.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/add.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/command/del.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/del.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/command/info.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/info.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/command/pause.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/pause.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/command/resume.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/command/resume.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/daemon.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/daemon.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/daemonserver.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/daemonserver.cpp.o"
+  "/home/agar/Project/BitTorrent/daemon/src/main.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/daemon/CMakeFiles/BT_daemon.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

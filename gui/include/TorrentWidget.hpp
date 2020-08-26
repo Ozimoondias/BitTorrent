@@ -18,11 +18,31 @@ class       TorrentWidget : public QTreeWidget
 Q_OBJECT
 
 public:
-    TorrentWidget(QWidget *parent = 0);
-    QList<QTreeWidgetItem*> list_tree_widget_;
+    TorrentWidget(std::unique_ptr<httplib::Client>&,
+            std::string&,
+            QWidget *parent = nullptr);
+    virtual ~TorrentWidget(){}
+
+    static std::vector<std::string>    str_to_wordtab(const std::string&,
+                                               const char&);
+    std::vector<std::string>    get_state(
+            const std::vector<std::string>&);
+    void    add_torrent(const std::string &);
+
+    QTreeWidgetItem *get_current();
+
+    bool    is_in_req(const std::string&,
+                      const std::vector<std::string>&);
+    bool    is_in_list(const std::string&);
+
+    void    test_torrent_name(const std::vector<std::string>&);
+    void    print();
 
 private:
-    httplib::Client client_;
+    std::string                                     &current_state_;
+    std::vector<std::unique_ptr<QTreeWidgetItem>>   list_tree_widget_;
+    std::unique_ptr<httplib::Client>                &client_;
+
 
 private slots:
     void onItemClicked(QTreeWidgetItem *item, int);

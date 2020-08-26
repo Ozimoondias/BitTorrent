@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/Project/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/Project/BitTorrent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/progress.marks
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/progress.marks
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/clean
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/preinstall
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/preinstall
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gui/CMakeFiles/BT_gui.dir/rule:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/CMakeFiles/BT_gui.dir/rule
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/CMakeFiles/BT_gui.dir/rule
 .PHONY : gui/CMakeFiles/BT_gui.dir/rule
 
 # Convenience name for target.
@@ -142,12 +142,12 @@ BT_gui: gui/CMakeFiles/BT_gui.dir/rule
 
 # fast build rule for target.
 BT_gui/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/build
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/build
 .PHONY : BT_gui/fast
 
 # Convenience name for target.
 gui/CMakeFiles/BT_gui_autogen.dir/rule:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/CMakeFiles/BT_gui_autogen.dir/rule
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui/CMakeFiles/BT_gui_autogen.dir/rule
 .PHONY : gui/CMakeFiles/BT_gui_autogen.dir/rule
 
 # Convenience name for target.
@@ -157,7 +157,7 @@ BT_gui_autogen: gui/CMakeFiles/BT_gui_autogen.dir/rule
 
 # fast build rule for target.
 BT_gui_autogen/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui_autogen.dir/build.make gui/CMakeFiles/BT_gui_autogen.dir/build
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui_autogen.dir/build.make gui/CMakeFiles/BT_gui_autogen.dir/build
 .PHONY : BT_gui_autogen/fast
 
 BT_gui_autogen/mocs_compilation.o: BT_gui_autogen/mocs_compilation.cpp.o
@@ -166,7 +166,7 @@ BT_gui_autogen/mocs_compilation.o: BT_gui_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 BT_gui_autogen/mocs_compilation.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o
 .PHONY : BT_gui_autogen/mocs_compilation.cpp.o
 
 BT_gui_autogen/mocs_compilation.i: BT_gui_autogen/mocs_compilation.cpp.i
@@ -175,7 +175,7 @@ BT_gui_autogen/mocs_compilation.i: BT_gui_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 BT_gui_autogen/mocs_compilation.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i
 .PHONY : BT_gui_autogen/mocs_compilation.cpp.i
 
 BT_gui_autogen/mocs_compilation.s: BT_gui_autogen/mocs_compilation.cpp.s
@@ -184,8 +184,62 @@ BT_gui_autogen/mocs_compilation.s: BT_gui_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 BT_gui_autogen/mocs_compilation.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s
 .PHONY : BT_gui_autogen/mocs_compilation.cpp.s
+
+src/BottomWidget.o: src/BottomWidget.cpp.o
+
+.PHONY : src/BottomWidget.o
+
+# target to build an object file
+src/BottomWidget.cpp.o:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o
+.PHONY : src/BottomWidget.cpp.o
+
+src/BottomWidget.i: src/BottomWidget.cpp.i
+
+.PHONY : src/BottomWidget.i
+
+# target to preprocess a source file
+src/BottomWidget.cpp.i:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.i
+.PHONY : src/BottomWidget.cpp.i
+
+src/BottomWidget.s: src/BottomWidget.cpp.s
+
+.PHONY : src/BottomWidget.s
+
+# target to generate assembly for a file
+src/BottomWidget.cpp.s:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.s
+.PHONY : src/BottomWidget.cpp.s
+
+src/MainWindow.o: src/MainWindow.cpp.o
+
+.PHONY : src/MainWindow.o
+
+# target to build an object file
+src/MainWindow.cpp.o:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o
+.PHONY : src/MainWindow.cpp.o
+
+src/MainWindow.i: src/MainWindow.cpp.i
+
+.PHONY : src/MainWindow.i
+
+# target to preprocess a source file
+src/MainWindow.cpp.i:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.i
+.PHONY : src/MainWindow.cpp.i
+
+src/MainWindow.s: src/MainWindow.cpp.s
+
+.PHONY : src/MainWindow.s
+
+# target to generate assembly for a file
+src/MainWindow.cpp.s:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.s
+.PHONY : src/MainWindow.cpp.s
 
 src/StatesWidget.o: src/StatesWidget.cpp.o
 
@@ -193,7 +247,7 @@ src/StatesWidget.o: src/StatesWidget.cpp.o
 
 # target to build an object file
 src/StatesWidget.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o
 .PHONY : src/StatesWidget.cpp.o
 
 src/StatesWidget.i: src/StatesWidget.cpp.i
@@ -202,7 +256,7 @@ src/StatesWidget.i: src/StatesWidget.cpp.i
 
 # target to preprocess a source file
 src/StatesWidget.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i
 .PHONY : src/StatesWidget.cpp.i
 
 src/StatesWidget.s: src/StatesWidget.cpp.s
@@ -211,89 +265,89 @@ src/StatesWidget.s: src/StatesWidget.cpp.s
 
 # target to generate assembly for a file
 src/StatesWidget.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
 .PHONY : src/StatesWidget.cpp.s
 
-src/TopToolBar.o: src/TopToolBar.cpp.o
+src/TopWidget.o: src/TopWidget.cpp.o
 
-.PHONY : src/TopToolBar.o
-
-# target to build an object file
-src/TopToolBar.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o
-.PHONY : src/TopToolBar.cpp.o
-
-src/TopToolBar.i: src/TopToolBar.cpp.i
-
-.PHONY : src/TopToolBar.i
-
-# target to preprocess a source file
-src/TopToolBar.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.i
-.PHONY : src/TopToolBar.cpp.i
-
-src/TopToolBar.s: src/TopToolBar.cpp.s
-
-.PHONY : src/TopToolBar.s
-
-# target to generate assembly for a file
-src/TopToolBar.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.s
-.PHONY : src/TopToolBar.cpp.s
-
-src/TorentWidget.o: src/TorentWidget.cpp.o
-
-.PHONY : src/TorentWidget.o
+.PHONY : src/TopWidget.o
 
 # target to build an object file
-src/TorentWidget.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o
-.PHONY : src/TorentWidget.cpp.o
+src/TopWidget.cpp.o:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o
+.PHONY : src/TopWidget.cpp.o
 
-src/TorentWidget.i: src/TorentWidget.cpp.i
+src/TopWidget.i: src/TopWidget.cpp.i
 
-.PHONY : src/TorentWidget.i
+.PHONY : src/TopWidget.i
 
 # target to preprocess a source file
-src/TorentWidget.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.i
-.PHONY : src/TorentWidget.cpp.i
+src/TopWidget.cpp.i:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.i
+.PHONY : src/TopWidget.cpp.i
 
-src/TorentWidget.s: src/TorentWidget.cpp.s
+src/TopWidget.s: src/TopWidget.cpp.s
 
-.PHONY : src/TorentWidget.s
+.PHONY : src/TopWidget.s
 
 # target to generate assembly for a file
-src/TorentWidget.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.s
-.PHONY : src/TorentWidget.cpp.s
+src/TopWidget.cpp.s:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.s
+.PHONY : src/TopWidget.cpp.s
 
-src/bt_window.o: src/bt_window.cpp.o
+src/TorrentThread.o: src/TorrentThread.cpp.o
 
-.PHONY : src/bt_window.o
+.PHONY : src/TorrentThread.o
 
 # target to build an object file
-src/bt_window.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o
-.PHONY : src/bt_window.cpp.o
+src/TorrentThread.cpp.o:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o
+.PHONY : src/TorrentThread.cpp.o
 
-src/bt_window.i: src/bt_window.cpp.i
+src/TorrentThread.i: src/TorrentThread.cpp.i
 
-.PHONY : src/bt_window.i
+.PHONY : src/TorrentThread.i
 
 # target to preprocess a source file
-src/bt_window.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.i
-.PHONY : src/bt_window.cpp.i
+src/TorrentThread.cpp.i:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.i
+.PHONY : src/TorrentThread.cpp.i
 
-src/bt_window.s: src/bt_window.cpp.s
+src/TorrentThread.s: src/TorrentThread.cpp.s
 
-.PHONY : src/bt_window.s
+.PHONY : src/TorrentThread.s
 
 # target to generate assembly for a file
-src/bt_window.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.s
-.PHONY : src/bt_window.cpp.s
+src/TorrentThread.cpp.s:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.s
+.PHONY : src/TorrentThread.cpp.s
+
+src/TorrentWidget.o: src/TorrentWidget.cpp.o
+
+.PHONY : src/TorrentWidget.o
+
+# target to build an object file
+src/TorrentWidget.cpp.o:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o
+.PHONY : src/TorrentWidget.cpp.o
+
+src/TorrentWidget.i: src/TorrentWidget.cpp.i
+
+.PHONY : src/TorrentWidget.i
+
+# target to preprocess a source file
+src/TorrentWidget.cpp.i:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.i
+.PHONY : src/TorrentWidget.cpp.i
+
+src/TorrentWidget.s: src/TorrentWidget.cpp.s
+
+.PHONY : src/TorrentWidget.s
+
+# target to generate assembly for a file
+src/TorrentWidget.cpp.s:
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.s
+.PHONY : src/TorrentWidget.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -301,7 +355,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -310,7 +364,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -319,7 +373,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f gui/CMakeFiles/BT_gui.dir/build.make gui/CMakeFiles/BT_gui.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -335,18 +389,24 @@ help:
 	@echo "... BT_gui_autogen/mocs_compilation.o"
 	@echo "... BT_gui_autogen/mocs_compilation.i"
 	@echo "... BT_gui_autogen/mocs_compilation.s"
+	@echo "... src/BottomWidget.o"
+	@echo "... src/BottomWidget.i"
+	@echo "... src/BottomWidget.s"
+	@echo "... src/MainWindow.o"
+	@echo "... src/MainWindow.i"
+	@echo "... src/MainWindow.s"
 	@echo "... src/StatesWidget.o"
 	@echo "... src/StatesWidget.i"
 	@echo "... src/StatesWidget.s"
-	@echo "... src/TopToolBar.o"
-	@echo "... src/TopToolBar.i"
-	@echo "... src/TopToolBar.s"
-	@echo "... src/TorentWidget.o"
-	@echo "... src/TorentWidget.i"
-	@echo "... src/TorentWidget.s"
-	@echo "... src/bt_window.o"
-	@echo "... src/bt_window.i"
-	@echo "... src/bt_window.s"
+	@echo "... src/TopWidget.o"
+	@echo "... src/TopWidget.i"
+	@echo "... src/TopWidget.s"
+	@echo "... src/TorrentThread.o"
+	@echo "... src/TorrentThread.i"
+	@echo "... src/TorrentThread.s"
+	@echo "... src/TorrentWidget.o"
+	@echo "... src/TorrentWidget.i"
+	@echo "... src/TorrentWidget.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -361,6 +421,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

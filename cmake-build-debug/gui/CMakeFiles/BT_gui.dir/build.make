@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/Project/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/Project/BitTorrent/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include gui/CMakeFiles/BT_gui.dir/depend.make
@@ -79,107 +79,137 @@ include gui/CMakeFiles/BT_gui.dir/flags.make
 
 gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
 gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o: gui/BT_gui_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o -c /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o -c /home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp
 
 gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp > CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp > CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.i
 
 gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp -o CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp -o CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.s
 
 gui/CMakeFiles/BT_gui.dir/src/main.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
 gui/CMakeFiles/BT_gui.dir/src/main.cpp.o: ../gui/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/main.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/main.cpp.o -c /home/agar/BitTorrent/gui/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/main.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/main.cpp.o -c /home/agar/Project/BitTorrent/gui/src/main.cpp
 
 gui/CMakeFiles/BT_gui.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/main.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/gui/src/main.cpp > CMakeFiles/BT_gui.dir/src/main.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/main.cpp > CMakeFiles/BT_gui.dir/src/main.cpp.i
 
 gui/CMakeFiles/BT_gui.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/main.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/gui/src/main.cpp -o CMakeFiles/BT_gui.dir/src/main.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/main.cpp -o CMakeFiles/BT_gui.dir/src/main.cpp.s
 
-gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
-gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o: ../gui/src/bt_window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/bt_window.cpp.o -c /home/agar/BitTorrent/gui/src/bt_window.cpp
+gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
+gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o: ../gui/src/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o -c /home/agar/Project/BitTorrent/gui/src/MainWindow.cpp
 
-gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/bt_window.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/gui/src/bt_window.cpp > CMakeFiles/BT_gui.dir/src/bt_window.cpp.i
+gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/MainWindow.cpp.i"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/MainWindow.cpp > CMakeFiles/BT_gui.dir/src/MainWindow.cpp.i
 
-gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/bt_window.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/gui/src/bt_window.cpp -o CMakeFiles/BT_gui.dir/src/bt_window.cpp.s
+gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/MainWindow.cpp.s"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/MainWindow.cpp -o CMakeFiles/BT_gui.dir/src/MainWindow.cpp.s
+
+gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
+gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o: ../gui/src/TopWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o -c /home/agar/Project/BitTorrent/gui/src/TopWidget.cpp
+
+gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/TopWidget.cpp.i"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/TopWidget.cpp > CMakeFiles/BT_gui.dir/src/TopWidget.cpp.i
+
+gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/TopWidget.cpp.s"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/TopWidget.cpp -o CMakeFiles/BT_gui.dir/src/TopWidget.cpp.s
+
+gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
+gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o: ../gui/src/BottomWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o -c /home/agar/Project/BitTorrent/gui/src/BottomWidget.cpp
+
+gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.i"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/BottomWidget.cpp > CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.i
+
+gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.s"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/BottomWidget.cpp -o CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.s
 
 gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
 gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o: ../gui/src/StatesWidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o -c /home/agar/BitTorrent/gui/src/StatesWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o -c /home/agar/Project/BitTorrent/gui/src/StatesWidget.cpp
 
 gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/gui/src/StatesWidget.cpp > CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/StatesWidget.cpp > CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.i
 
 gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/gui/src/StatesWidget.cpp -o CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/StatesWidget.cpp -o CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.s
 
-gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
-gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o: ../gui/src/TorentWidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o -c /home/agar/BitTorrent/gui/src/TorentWidget.cpp
+gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
+gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o: ../gui/src/TorrentWidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o -c /home/agar/Project/BitTorrent/gui/src/TorrentWidget.cpp
 
-gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/gui/src/TorentWidget.cpp > CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.i
+gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.i"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/TorrentWidget.cpp > CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.i
 
-gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/gui/src/TorentWidget.cpp -o CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.s
+gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.s"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/TorrentWidget.cpp -o CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.s
 
-gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
-gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o: ../gui/src/TopToolBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o -c /home/agar/BitTorrent/gui/src/TopToolBar.cpp
+gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o: gui/CMakeFiles/BT_gui.dir/flags.make
+gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o: ../gui/src/TorrentThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o -c /home/agar/Project/BitTorrent/gui/src/TorrentThread.cpp
 
-gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.i"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/BitTorrent/gui/src/TopToolBar.cpp > CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.i
+gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.i"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/agar/Project/BitTorrent/gui/src/TorrentThread.cpp > CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.i
 
-gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.s"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/BitTorrent/gui/src/TopToolBar.cpp -o CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.s
+gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.s"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/agar/Project/BitTorrent/gui/src/TorrentThread.cpp -o CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.s
 
 # Object files for target BT_gui
 BT_gui_OBJECTS = \
 "CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/BT_gui.dir/src/main.cpp.o" \
-"CMakeFiles/BT_gui.dir/src/bt_window.cpp.o" \
+"CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o" \
+"CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o" \
+"CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o" \
 "CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o" \
-"CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o" \
-"CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o"
+"CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o" \
+"CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o"
 
 # External object files for target BT_gui
 BT_gui_EXTERNAL_OBJECTS =
 
 gui/BT_gui: gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o
 gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/main.cpp.o
-gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o
+gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o
+gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o
+gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o
 gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o
-gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o
-gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o
+gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o
+gui/BT_gui: gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o
 gui/BT_gui: gui/CMakeFiles/BT_gui.dir/build.make
 gui/BT_gui: /usr/lib/libQt5Widgets.so.5.15.0
 gui/BT_gui: /usr/lib/libQt5Gui.so.5.15.0
 gui/BT_gui: /usr/lib/libQt5Core.so.5.15.0
 gui/BT_gui: gui/CMakeFiles/BT_gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable BT_gui"
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BT_gui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable BT_gui"
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BT_gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 gui/CMakeFiles/BT_gui.dir/build: gui/BT_gui
@@ -187,10 +217,10 @@ gui/CMakeFiles/BT_gui.dir/build: gui/BT_gui
 .PHONY : gui/CMakeFiles/BT_gui.dir/build
 
 gui/CMakeFiles/BT_gui.dir/clean:
-	cd /home/agar/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -P CMakeFiles/BT_gui.dir/cmake_clean.cmake
+	cd /home/agar/Project/BitTorrent/cmake-build-debug/gui && $(CMAKE_COMMAND) -P CMakeFiles/BT_gui.dir/cmake_clean.cmake
 .PHONY : gui/CMakeFiles/BT_gui.dir/clean
 
 gui/CMakeFiles/BT_gui.dir/depend:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agar/BitTorrent /home/agar/BitTorrent/gui /home/agar/BitTorrent/cmake-build-debug /home/agar/BitTorrent/cmake-build-debug/gui /home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/agar/Project/BitTorrent /home/agar/Project/BitTorrent/gui /home/agar/Project/BitTorrent/cmake-build-debug /home/agar/Project/BitTorrent/cmake-build-debug/gui /home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gui/CMakeFiles/BT_gui.dir/depend
 

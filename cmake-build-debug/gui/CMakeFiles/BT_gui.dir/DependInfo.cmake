@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o"
-  "/home/agar/BitTorrent/gui/src/StatesWidget.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o"
-  "/home/agar/BitTorrent/gui/src/TopToolBar.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/TopToolBar.cpp.o"
-  "/home/agar/BitTorrent/gui/src/TorentWidget.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/TorentWidget.cpp.o"
-  "/home/agar/BitTorrent/gui/src/bt_window.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/bt_window.cpp.o"
-  "/home/agar/BitTorrent/gui/src/main.cpp" "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/main.cpp.o"
+  "/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/BT_gui_autogen/mocs_compilation.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/BottomWidget.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/BottomWidget.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/MainWindow.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/MainWindow.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/StatesWidget.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/StatesWidget.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/TopWidget.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/TopWidget.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/TorrentThread.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/TorrentThread.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/TorrentWidget.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/TorrentWidget.cpp.o"
+  "/home/agar/Project/BitTorrent/gui/src/main.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

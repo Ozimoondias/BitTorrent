@@ -4,38 +4,32 @@
 
 #include    "../include/StatesWidget.hpp"
 
-StatesWidget::StatesWidget(QWidget *parent) : QWidget(parent) {
-    list_widget_ = new QListWidget;
+StatesWidget::StatesWidget(std::string &cs,QWidget *parent) :
+current_state_(cs), QListWidget(parent) {
 
-    QListWidgetItem *b_all = new QListWidgetItem("All");
-    b_all->setIcon(QIcon("../../gui/resource/all.png"));
+    addItem(new QListWidgetItem(
+            QIcon("../../gui/resource/all.png"), "All"));
+    addItem(new QListWidgetItem(
+            QIcon("../../gui/resource/downloading.png"), "Downloading"));
+    addItem(new QListWidgetItem(
+            QIcon("../../gui/resource/inactive.png"), "Pause"));
+    addItem(new QListWidgetItem(
+            QIcon("../../gui/resource/seeding.png"), "Seeding"));
+    addItem(new QListWidgetItem(
+            QIcon("../../gui/resource/queued.png"), "Queued"));
 
-    QListWidgetItem *b_downloading = new QListWidgetItem("Downloading");
-    b_downloading->setIcon(QIcon("../../gui/resource/downloading.png"));
-
-    QListWidgetItem *b_inactive = new QListWidgetItem("Pause");
-    b_inactive->setIcon(QIcon("../../gui/resource/inactive.png"));
-
-    QListWidgetItem *b_seeding = new QListWidgetItem("Seeding");
-    b_seeding->setIcon(QIcon("../../gui/resource/seeding.png"));
-
-    QListWidgetItem *b_queued = new QListWidgetItem("Queued");
-    b_queued->setIcon(QIcon("../../gui/resource/queued.png"));
-
-    list_widget_->addItem(b_all);
-    list_widget_->addItem(b_downloading);
-    list_widget_->addItem(b_inactive);
-    list_widget_->addItem(b_seeding);
-    list_widget_->addItem(b_queued);
-
-    connect(list_widget_,
-            SIGNAL(itemClicked(QListWidgetItem*)),
-            SLOT(onItemClicked(QListWidgetItem*)));
+    connect(this,
+            SIGNAL(itemClicked(QListWidgetItem * )),
+            SLOT(onItemClicked(QListWidgetItem * )));
 }
 
 void    StatesWidget::onItemClicked(QListWidgetItem *item)
 {
     if (!item)
         return;
-    qDebug() << "row [" << list_widget_->row(item) << "] == " << item->text();
+
+    auto it = item->text().toStdString();
+
+    if (current_state_ != it)
+        current_state_ = it;
 }

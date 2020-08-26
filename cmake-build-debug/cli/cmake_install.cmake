@@ -1,4 +1,4 @@
-# Install script for directory: /home/agar/BitTorrent/cli
+# Install script for directory: /home/agar/Project/BitTorrent/cli
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

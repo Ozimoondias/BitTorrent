@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/agar/BitTorrent
+CMAKE_SOURCE_DIR = /home/agar/Project/BitTorrent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
+CMAKE_BINARY_DIR = /home/agar/Project/BitTorrent/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/agar/BitTorrent/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/progress.marks
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/BitTorrent/cmake-build-debug/CMakeFiles 0
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles /home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/progress.marks
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/agar/Project/BitTorrent/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/clean
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/preinstall
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/preinstall
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cli/CMakeFiles/BT_cli.dir/rule:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/BT_cli.dir/rule
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/BT_cli.dir/rule
 .PHONY : cli/CMakeFiles/BT_cli.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ BT_cli: cli/CMakeFiles/BT_cli.dir/rule
 
 # fast build rule for target.
 BT_cli/fast:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/build
 .PHONY : BT_cli/fast
 
 src/cli.o: src/cli.cpp.o
@@ -151,7 +151,7 @@ src/cli.o: src/cli.cpp.o
 
 # target to build an object file
 src/cli.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o
 .PHONY : src/cli.cpp.o
 
 src/cli.i: src/cli.cpp.i
@@ -160,7 +160,7 @@ src/cli.i: src/cli.cpp.i
 
 # target to preprocess a source file
 src/cli.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.i
 .PHONY : src/cli.cpp.i
 
 src/cli.s: src/cli.cpp.s
@@ -169,7 +169,7 @@ src/cli.s: src/cli.cpp.s
 
 # target to generate assembly for a file
 src/cli.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/cli.cpp.s
 .PHONY : src/cli.cpp.s
 
 src/command/add.o: src/command/add.cpp.o
@@ -178,7 +178,7 @@ src/command/add.o: src/command/add.cpp.o
 
 # target to build an object file
 src/command/add.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.o
 .PHONY : src/command/add.cpp.o
 
 src/command/add.i: src/command/add.cpp.i
@@ -187,7 +187,7 @@ src/command/add.i: src/command/add.cpp.i
 
 # target to preprocess a source file
 src/command/add.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.i
 .PHONY : src/command/add.cpp.i
 
 src/command/add.s: src/command/add.cpp.s
@@ -196,7 +196,7 @@ src/command/add.s: src/command/add.cpp.s
 
 # target to generate assembly for a file
 src/command/add.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.s
 .PHONY : src/command/add.cpp.s
 
 src/command/del.o: src/command/del.cpp.o
@@ -205,7 +205,7 @@ src/command/del.o: src/command/del.cpp.o
 
 # target to build an object file
 src/command/del.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.o
 .PHONY : src/command/del.cpp.o
 
 src/command/del.i: src/command/del.cpp.i
@@ -214,7 +214,7 @@ src/command/del.i: src/command/del.cpp.i
 
 # target to preprocess a source file
 src/command/del.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.i
 .PHONY : src/command/del.cpp.i
 
 src/command/del.s: src/command/del.cpp.s
@@ -223,7 +223,7 @@ src/command/del.s: src/command/del.cpp.s
 
 # target to generate assembly for a file
 src/command/del.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.s
 .PHONY : src/command/del.cpp.s
 
 src/command/help.o: src/command/help.cpp.o
@@ -232,7 +232,7 @@ src/command/help.o: src/command/help.cpp.o
 
 # target to build an object file
 src/command/help.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.o
 .PHONY : src/command/help.cpp.o
 
 src/command/help.i: src/command/help.cpp.i
@@ -241,7 +241,7 @@ src/command/help.i: src/command/help.cpp.i
 
 # target to preprocess a source file
 src/command/help.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.i
 .PHONY : src/command/help.cpp.i
 
 src/command/help.s: src/command/help.cpp.s
@@ -250,7 +250,7 @@ src/command/help.s: src/command/help.cpp.s
 
 # target to generate assembly for a file
 src/command/help.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.s
 .PHONY : src/command/help.cpp.s
 
 src/command/info.o: src/command/info.cpp.o
@@ -259,7 +259,7 @@ src/command/info.o: src/command/info.cpp.o
 
 # target to build an object file
 src/command/info.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.o
 .PHONY : src/command/info.cpp.o
 
 src/command/info.i: src/command/info.cpp.i
@@ -268,7 +268,7 @@ src/command/info.i: src/command/info.cpp.i
 
 # target to preprocess a source file
 src/command/info.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.i
 .PHONY : src/command/info.cpp.i
 
 src/command/info.s: src/command/info.cpp.s
@@ -277,7 +277,7 @@ src/command/info.s: src/command/info.cpp.s
 
 # target to generate assembly for a file
 src/command/info.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.s
 .PHONY : src/command/info.cpp.s
 
 src/command/pause.o: src/command/pause.cpp.o
@@ -286,7 +286,7 @@ src/command/pause.o: src/command/pause.cpp.o
 
 # target to build an object file
 src/command/pause.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.o
 .PHONY : src/command/pause.cpp.o
 
 src/command/pause.i: src/command/pause.cpp.i
@@ -295,7 +295,7 @@ src/command/pause.i: src/command/pause.cpp.i
 
 # target to preprocess a source file
 src/command/pause.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.i
 .PHONY : src/command/pause.cpp.i
 
 src/command/pause.s: src/command/pause.cpp.s
@@ -304,7 +304,7 @@ src/command/pause.s: src/command/pause.cpp.s
 
 # target to generate assembly for a file
 src/command/pause.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.s
 .PHONY : src/command/pause.cpp.s
 
 src/command/resume.o: src/command/resume.cpp.o
@@ -313,7 +313,7 @@ src/command/resume.o: src/command/resume.cpp.o
 
 # target to build an object file
 src/command/resume.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.o
 .PHONY : src/command/resume.cpp.o
 
 src/command/resume.i: src/command/resume.cpp.i
@@ -322,7 +322,7 @@ src/command/resume.i: src/command/resume.cpp.i
 
 # target to preprocess a source file
 src/command/resume.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.i
 .PHONY : src/command/resume.cpp.i
 
 src/command/resume.s: src/command/resume.cpp.s
@@ -331,7 +331,7 @@ src/command/resume.s: src/command/resume.cpp.s
 
 # target to generate assembly for a file
 src/command/resume.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.s
 .PHONY : src/command/resume.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -340,7 +340,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.o
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -349,7 +349,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.i
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -358,7 +358,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.s
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(MAKE) $(MAKESILENT) -f cli/CMakeFiles/BT_cli.dir/build.make cli/CMakeFiles/BT_cli.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -405,6 +405,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/agar/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/agar/Project/BitTorrent/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

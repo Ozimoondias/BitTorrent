@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -fPIC
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/include -isystem /usr/include/qt -isystem /usr/include/qt/QtWidgets -isystem /usr/include/qt/QtGui -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ 
 

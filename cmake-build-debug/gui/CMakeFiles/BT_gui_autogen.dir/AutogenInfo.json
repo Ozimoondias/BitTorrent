@@ -1,38 +1,48 @@
 {
-	"BUILD_DIR" : "/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen",
-	"CMAKE_BINARY_DIR" : "/home/agar/BitTorrent/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/agar/BitTorrent/cmake-build-debug/gui",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/agar/BitTorrent/gui",
-	"CMAKE_EXECUTABLE" : "/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/home/agar/BitTorrent",
+	"BUILD_DIR" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen",
+	"CMAKE_BINARY_DIR" : "/home/agar/Project/BitTorrent/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/agar/Project/BitTorrent/gui",
+	"CMAKE_EXECUTABLE" : "/var/lib/snapd/snap/clion/123/bin/cmake/linux/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/agar/Project/BitTorrent",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/agar/BitTorrent/gui/include/StatesWidget.hpp",
+			"/home/agar/Project/BitTorrent/gui/include/BottomWidget.hpp",
+			"Mu",
+			"6YEA5652QU/moc_BottomWidget.cpp"
+		],
+		[
+			"/home/agar/Project/BitTorrent/gui/include/MainWindow.hpp",
+			"Mu",
+			"6YEA5652QU/moc_MainWindow.cpp"
+		],
+		[
+			"/home/agar/Project/BitTorrent/gui/include/StatesWidget.hpp",
 			"Mu",
 			"6YEA5652QU/moc_StatesWidget.cpp"
 		],
 		[
-			"/home/agar/BitTorrent/gui/include/TopToolBar.hpp",
+			"/home/agar/Project/BitTorrent/gui/include/TopWidget.hpp",
 			"Mu",
-			"6YEA5652QU/moc_TopToolBar.cpp"
+			"6YEA5652QU/moc_TopWidget.cpp"
 		],
 		[
-			"/home/agar/BitTorrent/gui/include/TorrentWidget.hpp",
+			"/home/agar/Project/BitTorrent/gui/include/TorrentThread.hpp",
+			"Mu",
+			"6YEA5652QU/moc_TorrentThread.cpp"
+		],
+		[
+			"/home/agar/Project/BitTorrent/gui/include/TorrentWidget.hpp",
 			"Mu",
 			"6YEA5652QU/moc_TorrentWidget.cpp"
-		],
-		[
-			"/home/agar/BitTorrent/gui/include/bt_window.hpp",
-			"Mu",
-			"6YEA5652QU/moc_bt_window.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -65,26 +75,28 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/home/agar/Téléchargements/clion-2020.2/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+		"/var/lib/snapd/snap/clion/123/bin/cmake/linux/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/agar/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/BT_gui_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/agar/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/agar/Project/BitTorrent/cmake-build-debug/gui/CMakeFiles/BT_gui_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/agar/BitTorrent/gui/src/StatesWidget.cpp", "Mu" ],
-		[ "/home/agar/BitTorrent/gui/src/TopToolBar.cpp", "Mu" ],
-		[ "/home/agar/BitTorrent/gui/src/TorentWidget.cpp", "Mu" ],
-		[ "/home/agar/BitTorrent/gui/src/bt_window.cpp", "Mu" ],
-		[ "/home/agar/BitTorrent/gui/src/main.cpp", "Mu" ]
+		[ "/home/agar/Project/BitTorrent/gui/src/BottomWidget.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/MainWindow.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/StatesWidget.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/TopWidget.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/TorrentThread.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/TorrentWidget.cpp", "Mu" ],
+		[ "/home/agar/Project/BitTorrent/gui/src/main.cpp", "Mu" ]
 	],
 	"VERBOSITY" : 0
 }

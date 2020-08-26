@@ -17,7 +17,7 @@ void            DaemonServer::info_cli() {
                     i->info_cli(str);
             }
             if (str.size () > 0)
-                str.resize (str.size () - 2);
+                str.resize(str.size () - 2);
             res.set_content(str, "text/plain");
         }
     });
@@ -34,7 +34,7 @@ void            DaemonServer::info_gui() {
                         i->infos_gui(str);
                 } else {
                     i->info_gui(str);
-                    str.append("|");
+                    str.append("\n");
                 }
             }
             res.set_content(str, "text/plain");

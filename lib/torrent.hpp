@@ -9,16 +9,18 @@
 #include                        <iostream>
 
 #define ERROR                   "Error"
-#define PAUSED                  "Paused"
+#define PAUSED                  "Pause"
 #define SEEDING                 "Seeding"
 #define DOWNLOAD                "Downloading"
 
 struct                          Torrent
 {
     Torrent(std::string name)
-    : status_(DOWNLOAD), name_(name){}
+    : status_(DOWNLOAD), name_(name),
+    folder_(""), size_(0), up_(0), down_(0){}
     Torrent(std::string name, std::string folder)
-    : status_(DOWNLOAD), name_(name), folder_(folder){}
+    : status_(DOWNLOAD), name_(name),
+    folder_(folder), size_(0), up_(0), down_(0){}
 
     void                        info_cli(std::string& str) {
         str.append("Name: " + name_ + '\n');
@@ -39,20 +41,22 @@ struct                          Torrent
         str.append("\n");
     }
     void                        info_gui(std::string& str) {
-        str.append(name_ + '\n');
-        str.append(std::to_string(size_) + '\n');
-        str.append(status_ + '\n');
-        str.append(std::to_string(down_) + '\n');
-        str.append(std::to_string(up_) + '\n');
+        str.append(name_ + '|');
+        str.append(std::to_string(size_) + '|');
+        str.append(status_ + '|');
+        str.append(std::to_string(down_) + '|');
+        str.append(std::to_string(up_) + '|');
     }
     void                        infos_gui(std::string& str) {
-        str.append(name_ + '\n');
-        str.append(std::to_string(size_) + '\n');
-        str.append(status_ + '\n');
-        str.append(std::to_string(down_) + '\n');
-        str.append(std::to_string(up_) + '\n');
-        str.append(std::to_string(seed_.size()) + '\n');
-        str.append(std::to_string(peer_.size()) + '\n');
+        str.append(name_ + '|');
+        str.append(std::to_string(size_) + '|');
+        str.append(status_ + '|');
+        str.append(std::to_string(down_) + '|');
+        str.append(std::to_string(up_) + '|');
+        str.append(std::to_string(seed_.size()) + '|');
+        str.append(std::to_string(peer_.size()) + '|');
+        for (int i = 0; i < 13; ++i)
+            str.append(std::to_string(rand() % (99 - 50 + 1) + 99) + '|');
     }
 
     std::string                 status_;

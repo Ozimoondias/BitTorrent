@@ -1,4 +1,4 @@
-# Install script for directory: /home/agar/BitTorrent/daemon
+# Install script for directory: /home/agar/Project/BitTorrent/daemon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

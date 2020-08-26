@@ -1,4 +1,4 @@
-# Install script for directory: /home/agar/BitTorrent
+# Install script for directory: /home/agar/Project/BitTorrent
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,17 +39,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/agar/BitTorrent/cmake-build-debug/cli/cmake_install.cmake")
+  include("/home/agar/Project/BitTorrent/cmake-build-debug/cli/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/agar/BitTorrent/cmake-build-debug/daemon/cmake_install.cmake")
+  include("/home/agar/Project/BitTorrent/cmake-build-debug/daemon/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/agar/BitTorrent/cmake-build-debug/gui/cmake_install.cmake")
+  include("/home/agar/Project/BitTorrent/cmake-build-debug/gui/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/agar/BitTorrent/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/agar/Project/BitTorrent/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

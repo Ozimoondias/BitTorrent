@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/agar/BitTorrent/cli/src/cli.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/add.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/del.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/help.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/info.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/pause.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.o"
-  "/home/agar/BitTorrent/cli/src/command/resume.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.o"
-  "/home/agar/BitTorrent/cli/src/main.cpp" "/home/agar/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/main.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/cli.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/cli.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/add.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/add.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/del.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/del.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/help.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/help.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/info.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/info.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/pause.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/pause.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/command/resume.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/command/resume.cpp.o"
+  "/home/agar/Project/BitTorrent/cli/src/main.cpp" "/home/agar/Project/BitTorrent/cmake-build-debug/cli/CMakeFiles/BT_cli.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

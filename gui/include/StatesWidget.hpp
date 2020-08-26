@@ -5,17 +5,19 @@
 #ifndef TO_DO_LIST_STATESWIDGET_HPP
 #define TO_DO_LIST_STATESWIDGET_HPP
 
-#include    <QWidget>
-#include    <QtWidgets/QListWidget>
+#include    <QListWidget>
 #include    <QDebug>
 
-class       StatesWidget : public QWidget
+class       StatesWidget : public QListWidget
 {
     Q_OBJECT
 
 public:
-    StatesWidget(QWidget *parent = 0);
-    QListWidget *list_widget_;
+    StatesWidget(std::string&, QWidget *parent = nullptr);
+    virtual ~StatesWidget(){}
+
+private:
+    std::string &current_state_;
 
 private slots:
     void onItemClicked(QListWidgetItem *item);
